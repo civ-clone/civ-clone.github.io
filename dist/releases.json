@@ -1,4 +1,8 @@
 [
+{"version":"0.1.0@66175d1","date":"2026-10-22T15:13:44.000Z","localChanges":["If the game stops answering for 30 seconds while you're waiting on a report or a list, a window now says so, and what you asked for still appears if the game catches up (closes #470)."],"externalChanges":{}}
+,
+{"version":"0.1.0@1e0fb2e","date":"2026-10-22T15:37:30.000Z","localChanges":["chore: release notes for the latest release"],"externalChanges":{}}
+,
 {"version":"0.1.0@c2fa322","date":"2026-10-22T08:23:38.000Z","localChanges":["test: the overlap-draw cost measurement runs again under the suite runner"],"externalChanges":{}}
 ,
 {"version":"0.1.0@0ec6e3e","date":"2026-10-22T08:22:52.000Z","localChanges":["test: re-record the render-geometry fixture for terrain drawn once a square (#488)"],"externalChanges":{}}
