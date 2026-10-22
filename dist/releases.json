@@ -1,4 +1,14 @@
 [
+{"version":"0.1.0@c2fa322","date":"2026-10-22T08:23:38.000Z","localChanges":["test: the overlap-draw cost measurement runs again under the suite runner"],"externalChanges":{}}
+,
+{"version":"0.1.0@0ec6e3e","date":"2026-10-22T08:22:52.000Z","localChanges":["test: re-record the render-geometry fixture for terrain drawn once a square (#488)"],"externalChanges":{}}
+,
+{"version":"0.1.0@ffc9f57","date":"2026-10-22T08:22:42.000Z","localChanges":["Changing government on a large map is quicker now that the map's terrain is no longer drawn over and over again (closes #488)."],"externalChanges":{}}
+,
+{"version":"0.1.0@9fc482d","date":"2026-10-22T08:22:16.000Z","localChanges":["test: re-record the render-geometry fixture for squares redrawn with what reaches them (#486)"],"externalChanges":{}}
+,
+{"version":"0.1.0@356926e","date":"2026-10-22T08:17:18.000Z","localChanges":["A stack of units no longer leaves a sliver of the unit behind it on the squares above and to its left when the stack moves on or breaks up, and a unit moving next to a stack no longer cuts the edge off it (closes #486).","A city no longer leaves a sliver on the squares to its right and below when it changes, and the last column of worked-square icons is no longer cut off at the edge of its square or left behind on the square to its right.","City names that overlap a neighbouring city's name no longer turn bolder and ragged each time one of the two cities changes."],"externalChanges":{}}
+,
 {"version":"0.1.0@31378e5","date":"2026-10-22T08:19:10.000Z","localChanges":["fix: starting a revolution no longer freezes the game for a moment on large maps, and a new government sends only the squares it changes (#488)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@00d3151","date":"2026-10-22T08:10:56.000Z","localChanges":["perf: the map no longer stalls working out what to redraw after a change of government on large maps (#488)"],"externalChanges":{}}
