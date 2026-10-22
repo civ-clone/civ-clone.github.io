@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@7e6fe42","date":"2026-10-22T08:13:43.000Z","localChanges":["chore: the map grids a new game offers, and where the map's tiles go, come from the installed tilesets (#56, #92)"],"externalChanges":{}}
+,
 {"version":"0.1.0@680d54b","date":"2026-10-22T07:38:35.000Z","localChanges":["When something goes wrong inside the game, a window now says so, instead of the game sitting on \"waiting\" with no way to tell a problem from a slow turn (#470).","A report or list that could not be worked out, such as Top Cities or a city's production choices, no longer stops that window from ever opening again until the page is reloaded (#470).","An order that runs into a problem no longer ends your turn without a word: you are told, and your turn carries on (#470).","A save that cannot be loaded now says why and takes you back to the main menu, instead of leaving a blank page (#470)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@da17977","date":"2026-10-22T07:29:03.000Z","localChanges":["Loading a game saved during another civilization's turn no longer drops what you are told before your turn comes round, such as a city of yours being attacked (#151)."],"externalChanges":{}}
