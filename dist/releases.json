@@ -1,4 +1,18 @@
 [
+{"version":"0.1.0@ad619f6","date":"2026-10-23T10:40:32.000Z","localChanges":["chore: a game's data sent again whole is measured afresh before the page next tidies it"],"externalChanges":{}}
+,
+{"version":"0.1.0@d54b645","date":"2026-10-23T10:39:50.000Z","localChanges":["The city screen no longer takes the focus from the map or the rest of the page when only your gold changes (#503)."],"externalChanges":{}}
+,
+{"version":"0.1.0@7fcd8d7","date":"2026-10-23T10:37:47.000Z","localChanges":["chore: whether the turn ends by itself is always a yes or a no"],"externalChanges":{}}
+,
+{"version":"0.1.0@54579de","date":"2026-10-23T10:37:20.000Z","localChanges":["chore: the comments and types in the page's game code match what it does now"],"externalChanges":{}}
+,
+{"version":"0.1.0@26de2c4","date":"2026-10-23T10:35:37.000Z","localChanges":["chore: what each unit key does lives in a module of its own"],"externalChanges":{}}
+,
+{"version":"0.1.0@2bc5510","date":"2026-10-23T10:34:13.000Z","localChanges":["chore: the debug panel's JSON and CSV exports live in a module of their own"],"externalChanges":{}}
+,
+{"version":"0.1.0@972e803","date":"2026-10-23T10:32:16.000Z","localChanges":["test: the tests check more of what the page does during a game"],"externalChanges":{}}
+,
 {"version":"0.1.0@5e6fc06","date":"2026-10-23T10:19:04.000Z","localChanges":["test: the client transcript's game sends Diplomats to a rival city, with talks on the way, a halted GoTo, an embassy, an investigation and a meeting with the king"],"externalChanges":{}}
 ,
 {"version":"0.1.0@7805a22","date":"2026-10-23T10:16:05.000Z","localChanges":["test: the client transcript tells an undefined, NaN or Infinity apart from a missing key or a null"],"externalChanges":{}}
