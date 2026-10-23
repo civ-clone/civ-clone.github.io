@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@09ce7bc","date":"2026-10-23T09:39:37.000Z","localChanges":["A game loaded from a save now shows, along the top of the page, which turn has started and which civilization is moving while you wait for your turn, as a new game does (closes #588).","Those lines now read \"Turn 42\" and \"The Babylonians are moving…\" rather than \"turn start 42\" and \"player turn-start: Babylonian\", and a civilization you haven't met yet is no longer named in them."],"externalChanges":{}}
+,
 {"version":"0.1.0@85b3f22","date":"2026-10-23T09:40:21.000Z","localChanges":["chore: the map redraws a changed city by itself, whatever else comes with it (closes #578)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@b825c55","date":"2026-10-23T09:36:57.000Z","localChanges":["After losing a city, especially your capital, your other cities now show their corruption as it is, rather than as it was before the loss (closes #515). The same goes when you capture a city, or one of yours is destroyed."],"externalChanges":{}}
