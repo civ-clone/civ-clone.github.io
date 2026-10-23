@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@85b3f22","date":"2026-10-23T09:40:21.000Z","localChanges":["chore: the map redraws a changed city by itself, whatever else comes with it (closes #578)"],"externalChanges":{}}
+,
 {"version":"0.1.0@b825c55","date":"2026-10-23T09:36:57.000Z","localChanges":["After losing a city, especially your capital, your other cities now show their corruption as it is, rather than as it was before the loss (closes #515). The same goes when you capture a city, or one of yours is destroyed."],"externalChanges":{}}
 ,
 {"version":"0.1.0@c942ffe","date":"2026-10-23T09:45:06.000Z","localChanges":["chore: release notes for the latest release"],"externalChanges":{}}
