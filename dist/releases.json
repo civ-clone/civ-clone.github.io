@@ -1,4 +1,14 @@
 [
+{"version":"0.1.0@5e6fc06","date":"2026-10-23T10:19:04.000Z","localChanges":["test: the client transcript's game sends Diplomats to a rival city, with talks on the way, a halted GoTo, an embassy, an investigation and a meeting with the king"],"externalChanges":{}}
+,
+{"version":"0.1.0@7805a22","date":"2026-10-23T10:16:05.000Z","localChanges":["test: the client transcript tells an undefined, NaN or Infinity apart from a missing key or a null"],"externalChanges":{}}
+,
+{"version":"0.1.0@f639ac4","date":"2026-10-23T10:15:06.000Z","localChanges":["test: the worker's client tests catch the mutants the split's reviews found surviving"],"externalChanges":{}}
+,
+{"version":"0.1.0@90f674c","date":"2026-10-23T10:08:26.000Z","localChanges":["chore: the worker's client modules ask only for the registry methods they call, with their comments brought up to date"],"externalChanges":{}}
+,
+{"version":"0.1.0@c5e2a6f","date":"2026-10-23T10:05:18.000Z","localChanges":["chore: a disposed client calls off its turn's hand-over and asks nothing more of the UI"],"externalChanges":{}}
+,
 {"version":"0.1.0@c70521a","date":"2026-10-23T09:44:35.000Z","localChanges":["A key pressed just after giving a unit an order (fortify, sentry, skip, or one of its buttons) is no longer lost or sent for the unit that has just acted; it waits until the order has been carried out and then goes to the unit that is up (closes #543)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@09ce7bc","date":"2026-10-23T09:39:37.000Z","localChanges":["A game loaded from a save now shows, along the top of the page, which turn has started and which civilization is moving while you wait for your turn, as a new game does (closes #588).","Those lines now read \"Turn 42\" and \"The Babylonians are moving…\" rather than \"turn start 42\" and \"player turn-start: Babylonian\", and a civilization you haven't met yet is no longer named in them."],"externalChanges":{}}
