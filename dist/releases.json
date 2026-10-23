@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@bdae60d","date":"2026-10-23T12:25:31.000Z","localChanges":["chore: units, cities and their names are drawn the way the tileset describes them, ready for a second tileset (#56, #92)"],"externalChanges":{}}
+,
 {"version":"0.1.0@983a914","date":"2026-10-23T10:22:47.000Z","localChanges":["chore: the map's land, coasts, rivers, roads and fog are drawn the way the tileset describes them, ready for a second tileset (#56, #92)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@ad619f6","date":"2026-10-23T10:40:32.000Z","localChanges":["chore: a game's data sent again whole is measured afresh before the page next tidies it"],"externalChanges":{}}
