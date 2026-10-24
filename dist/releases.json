@@ -1,9 +1,13 @@
 [
+{"version":"0.1.0@a7b2e06","date":"2026-10-24T10:49:41.000Z","localChanges":["You can now save the game with Shift+S, as Save Game in the game menu does."],"externalChanges":{}}
+,
+{"version":"0.1.0@0b4a1b7","date":"2026-10-24T10:48:46.000Z","localChanges":["When the game can't answer a report, a list or a button, you're told so as before, and now nothing is left half open: the report closes, the button or list can be used again, and the new game windows leave you at the main menu (closes #580)."],"externalChanges":{}}
+,
+{"version":"0.1.0@a82a720","date":"2026-10-24T10:46:10.000Z","localChanges":["When a game can't be saved, you're now told so in a message that waits for you, the same one shown when the file can't be written, instead of a few seconds of text along the top of the screen (closes #581)."],"externalChanges":{}}
+,
+{"version":"0.1.0@341acb0","date":"2026-10-24T10:45:08.000Z","localChanges":["Choosing from a list with Enter, such as the one a unit stops at partway along its journey, now closes the window once, so what follows it happens once rather than twice (closes #599)."],"externalChanges":{}}
+,
 {"version":"0.1.0@81e4a4f","date":"2026-10-24T07:05:53.000Z","localChanges":["When you capture a rival's size 1 city, which the capture destroys, you're told you captured it, without a \"City destroyed!\" notice beside End Turn that showed it as one of your own cities (closes #501)."],"externalChanges":{}}
-,
-{"version":"0.1.0@850be2a","date":"2026-10-23T21:21:43.000Z","localChanges":["chore: update core-save-game"],"externalChanges":{"core-save-game":{"status":"updated","log":["`save` wrote every client as `kind: 'ai'` with its class name, as it can't tell which of a host's clients is a person. `SaveOptions.describeClient` lets the host say: `kind`, `module` and, for a person, `name` (`ClientDescriptor` gains the optional `name`). Without it the file is as before, and a file written before has `kind: 'ai'` throughout for the host to read by class name (civ-clone/web-renderer#608)."]}}}
-,
-{"version":"0.1.0@317601f","date":"2026-10-23T21:01:52.000Z","localChanges":["When you save a game, the file now records which seat was yours, with the name you gave it, and which AI played each computer seat. Loading it puts everyone back as they were: a computer seat keeps its AI, and a game watched with no human player is watched again. Games saved before this load as they always did (#608)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@5d77c4b","date":"2026-10-23T20:19:05.000Z","localChanges":["The Civilopedia is open from the Game menu, or with ?. It has an entry for every advance, city improvement, Wonder, unit, government, spaceship part, tile improvement and terrain, saying what each needs, what it leads to, what makes it obsolete and what replaces it, with links between entries. Units show their attack, defence and moves, and everything a city builds shows its cost (#183).","In a city's build list, Can't build… lists what the city can't build and why, such as \"Needs Gunpowder\" or \"Needs a coastal city\", each linked to its Civilopedia entry (#183).","The F1–F9 reports no longer open behind a message that's waiting for an answer, where they couldn't be clicked."],"externalChanges":{}}
 ,
