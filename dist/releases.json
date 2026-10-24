@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@81e4a4f","date":"2026-10-24T07:05:53.000Z","localChanges":["When you capture a rival's size 1 city, which the capture destroys, you're told you captured it, without a \"City destroyed!\" notice beside End Turn that showed it as one of your own cities (closes #501)."],"externalChanges":{}}
+,
 {"version":"0.1.0@850be2a","date":"2026-10-23T21:21:43.000Z","localChanges":["chore: update core-save-game"],"externalChanges":{"core-save-game":{"status":"updated","log":["`save` wrote every client as `kind: 'ai'` with its class name, as it can't tell which of a host's clients is a person. `SaveOptions.describeClient` lets the host say: `kind`, `module` and, for a person, `name` (`ClientDescriptor` gains the optional `name`). Without it the file is as before, and a file written before has `kind: 'ai'` throughout for the host to read by class name (civ-clone/web-renderer#608)."]}}}
 ,
 {"version":"0.1.0@317601f","date":"2026-10-23T21:01:52.000Z","localChanges":["When you save a game, the file now records which seat was yours, with the name you gave it, and which AI played each computer seat. Loading it puts everyone back as they were: a computer seat keeps its AI, and a game watched with no human player is watched again. Games saved before this load as they always did (#608)."],"externalChanges":{}}
