@@ -1,4 +1,8 @@
 [
+{"version":"0.1.0@cbe83cf","date":"2026-10-24T12:37:32.000Z","localChanges":["What a city can build is listed under headings: Units, City Improvements, Spaceship Parts, then Wonders of the World (closes #432).","Spaceship parts are called SS Structural, SS Fuel, SS Life Support and so on, wherever they appear (#432).","Each unit in the build list shows its attack, defence, movement and visibility, so you can compare them without leaving the list (closes #381)."],"externalChanges":{}}
+,
+{"version":"0.1.0@5a0b543","date":"2026-10-24T12:37:32.000Z","localChanges":["A list in a window, such as choosing your civilisation or what a city builds, now has one scrollbar, and the window's buttons stay in view. Long text scrolls with its window rather than inside it (closes #634)."],"externalChanges":{}}
+,
 {"version":"0.1.0@d64c18f","date":"2026-10-23T21:39:50.000Z","localChanges":["Load a Saved Game now shows who plays each civilisation in the file before the game goes on: take over a computer seat, hand yours to the computer, or close the window to load nothing. The seats you change are the ones that load, and the game remembers them the next time it is saved (#608)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@a6ebdc7","date":"2026-10-24T12:03:01.000Z","localChanges":["chore: bump marked, still showing any HTML in a release note as text (closes #583)"],"externalChanges":{}}
