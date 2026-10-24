@@ -1,4 +1,8 @@
 [
+{"version":"0.1.0@a6ebdc7","date":"2026-10-24T12:03:01.000Z","localChanges":["chore: bump marked, still showing any HTML in a release note as text (closes #583)"],"externalChanges":{}}
+,
+{"version":"0.1.0@be77318","date":"2026-10-24T12:03:01.000Z","localChanges":["When a leader you're at peace with hands the talks over to you, Good bye! is now the first option, so pressing Enter leaves instead of demanding tribute (closes #502)."],"externalChanges":{}}
+,
 {"version":"0.1.0@a7b2e06","date":"2026-10-24T10:49:41.000Z","localChanges":["You can now save the game with Shift+S, as Save Game in the game menu does."],"externalChanges":{}}
 ,
 {"version":"0.1.0@0b4a1b7","date":"2026-10-24T10:48:46.000Z","localChanges":["When the game can't answer a report, a list or a button, you're told so as before, and now nothing is left half open: the report closes, the button or list can be used again, and the new game windows leave you at the main menu (closes #580)."],"externalChanges":{}}
