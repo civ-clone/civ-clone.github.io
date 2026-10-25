@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@f009249","date":"2026-10-25T10:43:05.000Z","localChanges":["chore: the page no longer handles remove patches, which the game never sends, and pruning keeps its object map small (closes #68)"],"externalChanges":{}}
+,
 {"version":"0.1.0@cf7c786","date":"2026-10-25T09:55:57.000Z","localChanges":["Messages that open with a nation now start with a capital letter (\"The Sioux Nation has been defeated by the Aztec Empire!\"), while a nation later in a sentence keeps its lower-case \"the\" (closes #359).","Messages about a city being captured or destroyed, or nuclear weapons being used, now name who did it at the end (\"Our city Tenochtitlan has been captured by Barbarians!\"), so they read right for every civilization."],"externalChanges":{}}
 ,
 {"version":"0.1.0@7708999","date":"2026-10-25T09:18:06.000Z","localChanges":["chore: the release notes leave out the co-author lines of a squashed engine change"],"externalChanges":{}}
