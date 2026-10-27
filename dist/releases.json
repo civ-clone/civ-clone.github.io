@@ -1,4 +1,10 @@
 [
+{"version":"0.1.0@a0c3003","date":"2026-10-27T10:11:41.000Z","localChanges":["feat: the filter box shows that / takes you to it"],"externalChanges":{}}
+,
+{"version":"0.1.0@d09b3fc","date":"2026-10-26T21:42:52.000Z","localChanges":["fix: a report's filter matches words across columns, Down moves from it to the list, and Escape clears it from anywhere in the window"],"externalChanges":{}}
+,
+{"version":"0.1.0@a3005b4","date":"2026-10-26T21:35:36.000Z","localChanges":["The City Status, Trade, Happiness, Military and Intelligence reports, the Civilopedia index, Load Game and the Hall of Fame now have a filter box: type to narrow the list, matching anything shown in a row, with letters in order but not necessarily together, so \"musk\" finds cities building Musketmen and also Murmansk. Case and accents don't matter, Escape clears the filter, and typing anywhere in the window or pressing / starts it (closes #661)."],"externalChanges":{}}
+,
 {"version":"0.1.0@9ae3cad","date":"2026-10-26T19:55:33.000Z","localChanges":["test: Escape reaches a window's cancel from its focused button, and in place of closing it"],"externalChanges":{}}
 ,
 {"version":"0.1.0@fa836b0","date":"2026-10-26T19:51:44.000Z","localChanges":["When a move or pillage would break a peace treaty, pressing Esc now picks Cancel action, as the button does (closes #659)."],"externalChanges":{}}
