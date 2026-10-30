@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@dc1aea7","date":"2026-10-30T18:24:02.000Z","localChanges":["The game now loads only the sprites of the tileset in use, all of them before it draws anything, so it starts sooner when other tilesets are imported and the map is never drawn with sprites still missing. Imported assets are stored as images rather than text, about a quarter smaller, and assets imported before this are converted the first time the game starts (closes #730)."],"externalChanges":{}}
+,
 {"version":"0.1.0@71f0f96","date":"2026-10-30T17:38:30.000Z","localChanges":["A tileset can now say the size the city screen, the reports and the cursor show its icons and citizens at, so a tileset drawn at another size than Civ1's is no longer shown doubled or squashed (closes #729)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@49dad6c","date":"2026-10-30T17:23:03.000Z","localChanges":["fix: the Build Irrigation button shows the irrigation where the map draws it, over the terrain for a tileset that says so (#732)"],"externalChanges":{}}
