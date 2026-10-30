@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@71f0f96","date":"2026-10-30T17:38:30.000Z","localChanges":["A tileset can now say the size the city screen, the reports and the cursor show its icons and citizens at, so a tileset drawn at another size than Civ1's is no longer shown doubled or squashed (closes #729)."],"externalChanges":{}}
+,
 {"version":"0.1.0@49dad6c","date":"2026-10-30T17:23:03.000Z","localChanges":["fix: the Build Irrigation button shows the irrigation where the map draws it, over the terrain for a tileset that says so (#732)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@b515b89","date":"2026-10-30T16:15:14.000Z","localChanges":["The cursor, the action panels' icons, and the yield icons and citizens on the city screen and in the reports now come from the tileset in use, rather than always from Civ1's (closes #728).","A tileset whose terrain covers the land beneath it can now draw irrigation over its terrain, so the irrigation stays visible."],"externalChanges":{}}
