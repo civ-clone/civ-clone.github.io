@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@1e4af42","date":"2026-10-31T09:26:21.000Z","localChanges":["The interface's icons (close, maximise, the game menu, End turn, the spaceship, the sidebar's arrows and the release notes' arrows) are now one set drawn in the theme's colours, so they stay sharp at any size and follow ?theme=slate and dark mode (closes #741)."],"externalChanges":{}}
+,
 {"version":"0.1.0@c32bda0","date":"2026-10-30T22:23:43.000Z","localChanges":["Buttons no longer glow when hovered or jump when pressed, and they look alike in every window. With ?theme=slate, a window's main action is brass, Cancel is quiet and shows its Esc key, and actions that can't be undone, such as Sell, are red (closes #740)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@e1c2093","date":"2026-10-30T21:07:50.000Z","localChanges":["With ?theme=slate, window titles, the year and section headings are set in a capitals display face, everything else in a clearer interface face on one size scale, column headings in small capitals, and numbers line up in columns. The default look doesn't change (closes #737)."],"externalChanges":{}}
