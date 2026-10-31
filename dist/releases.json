@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@3f1b400","date":"2026-10-31T15:19:10.000Z","localChanges":["Adding ?interface=new to the address previews the new interface's windows: each says what kind of window it is and its key over the title, its buttons sit together at the bottom with the main one last and showing Enter, Enter presses the main button, windows fit on screen, and closing one puts you back where you were. Nothing changes without it (closes #738)."],"externalChanges":{}}
+,
 {"version":"0.1.0@f93e937","date":"2026-10-31T12:56:23.000Z","localChanges":["Hovering or tabbing to the treasury in the top bar now shows what your cities bring in, what their improvements cost, and the net each turn, and the research shows its progress, research a turn and when it's done. The research bar now shows next turn's progress striped, as the city screen's bars do (closes #742)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@b6feafb","date":"2026-10-31T11:49:36.000Z","localChanges":["Drop-downs, checkboxes, sliders, text fields, links and choice lists are now drawn by the game rather than the browser, so with ?theme=slate they match the rest of the window, and keyboard focus shows as one ring everywhere. Otherwise the default look doesn't change, except that Import assets now has a Choose files button with the names of the files chosen beside it (closes #739)."],"externalChanges":{}}
