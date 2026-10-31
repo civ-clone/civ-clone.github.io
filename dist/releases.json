@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@b6feafb","date":"2026-10-31T11:49:36.000Z","localChanges":["Drop-downs, checkboxes, sliders, text fields, links and choice lists are now drawn by the game rather than the browser, so with ?theme=slate they match the rest of the window, and keyboard focus shows as one ring everywhere. Otherwise the default look doesn't change, except that Import assets now has a Choose files button with the names of the files chosen beside it (closes #739)."],"externalChanges":{}}
+,
 {"version":"0.1.0@1e4af42","date":"2026-10-31T09:26:21.000Z","localChanges":["The interface's icons (close, maximise, the game menu, End turn, the spaceship, the sidebar's arrows and the release notes' arrows) are now one set drawn in the theme's colours, so they stay sharp at any size and follow ?theme=slate and dark mode (closes #741)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@c32bda0","date":"2026-10-30T22:23:43.000Z","localChanges":["Buttons no longer glow when hovered or jump when pressed, and they look alike in every window. With ?theme=slate, a window's main action is brass, Cancel is quiet and shows its Esc key, and actions that can't be undone, such as Sell, are red (closes #740)."],"externalChanges":{}}
