@@ -1,7 +1,9 @@
 [
-{"version":"0.1.0@d0f869e","date":"2026-11-04T16:34:31.000Z","localChanges":["Import Assets now takes ASOUND.CVL from the original Civilization files, even on its own once your graphics are in. The title menu then plays Evolution, as the original's does, from your first click, tap or key press, fading as the game begins (#126). Options has Sound and Sound volume; without ASOUND.CVL the game stays silent."],"externalChanges":{}}
+{"version":"0.1.0@99786ce","date":"2026-11-04T19:50:43.000Z","localChanges":["T now hides the unit awaiting orders and its ring as well as the other units and cities, so you can see the square under it, such as whether it has a special resource (closes #804). Moving or choosing a unit while they're hidden brings the cities back too, not just the units."],"externalChanges":{}}
 ,
-{"version":"0.1.0@129f89f","date":"2026-11-04T15:46:38.000Z","localChanges":["chore: the Civ1 AdLib driver in TypeScript, checked against sim.py (#126) (#799)"],"externalChanges":{}}
+{"version":"0.1.0@d0f869e7","date":"2026-11-04T16:34:31.000Z","localChanges":["Import Assets now takes ASOUND.CVL from the original Civilization files, even on its own once your graphics are in. The title menu then plays Evolution, as the original's does, from your first click, tap or key press, fading as the game begins (#126). Options has Sound and Sound volume; without ASOUND.CVL the game stays silent."],"externalChanges":{}}
+,
+{"version":"0.1.0@129f89fc","date":"2026-11-04T15:46:38.000Z","localChanges":["chore: the Civ1 AdLib driver in TypeScript, checked against sim.py (#126) (#799)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@2797e2f3","date":"2026-11-04T12:43:21.000Z","localChanges":["With the slate theme, the unit awaiting orders now has a soft brass ring round it in place of the blink. \"Unit awaiting orders\" in Options chooses the blink, the ring or both for any theme; the classic look still blinks unless you choose otherwise (closes #753)."],"externalChanges":{}}
 ,
