@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@92e5eda","date":"2026-11-08T20:05:15.000Z","localChanges":["refactor: the transport, requests and data patches come from core-data-client, and both worker transports are a package (#825) (#835)"],"externalChanges":{"core-data-client":{"status":"added","log":["feat: a transport contract, requests, data patches and rebuilding, for a client that isn't in the same process"]}}}
+{"version":"0.1.0@0a339ec","date":"2026-11-08T20:13:58.000Z","localChanges":["refactor: the worker is a package, ui-worker-client, that shares only the protocol and its transport with the page (#825) (#836)"],"externalChanges":{}}
+,
+{"version":"0.1.0@92e5edac","date":"2026-11-08T20:05:15.000Z","localChanges":["refactor: the transport, requests and data patches come from core-data-client, and both worker transports are a package (#825) (#835)"],"externalChanges":{"core-data-client":{"status":"added","log":["feat: a transport contract, requests, data patches and rebuilding, for a client that isn't in the same process"]}}}
 ,
 {"version":"0.1.0@2acfbd63","date":"2026-11-08T19:08:25.000Z","localChanges":["refactor: the page and the worker share only a protocol package (#825) (#834)"],"externalChanges":{}}
 ,
