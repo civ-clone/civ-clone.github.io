@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@261b7e9","date":"2026-11-08T17:42:59.000Z","localChanges":["refactor: the frontend's packages are @civ-clone/ui-*, which the engine tools skip (#825) (#833)"],"externalChanges":{}}
+{"version":"0.1.0@2acfbd6","date":"2026-11-08T19:08:25.000Z","localChanges":["refactor: the page and the worker share only a protocol package (#825) (#834)"],"externalChanges":{}}
+,
+{"version":"0.1.0@261b7e97","date":"2026-11-08T17:42:59.000Z","localChanges":["refactor: the frontend's packages are @civ-clone/ui-*, which the engine tools skip (#825) (#833)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@15af8f7c","date":"2026-11-08T17:05:09.000Z","localChanges":["refactor: the frontend is a set of workspace packages, one per area (#825) (#832)"],"externalChanges":{}}
 ,
