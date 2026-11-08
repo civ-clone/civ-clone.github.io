@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@bf56a47","date":"2026-11-08T21:37:22.000Z","localChanges":["refactor: civ.one's worker entry hands the game its plugins, so the worker client knows no ruleset of its own (#825) (#838)"],"externalChanges":{}}
+{"version":"0.1.0@a39f4d3","date":"2026-11-08T22:07:31.000Z","localChanges":["refactor: what only one interface uses is in that interface's package, and the slots name no interface's pieces (#825) (#839)"],"externalChanges":{}}
+,
+{"version":"0.1.0@bf56a47c","date":"2026-11-08T21:37:22.000Z","localChanges":["refactor: civ.one's worker entry hands the game its plugins, so the worker client knows no ruleset of its own (#825) (#838)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@cc5afdf4","date":"2026-11-08T21:21:34.000Z","localChanges":["refactor: the worker transports come from @civ-clone/worker-transport (#825) (#837)"],"externalChanges":{"worker-transport":{"status":"added","log":["feat: a core-data-client transport over a web worker's messages, for the page's end and the worker's"]}}}
 ,
