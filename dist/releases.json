@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@92ce87c","date":"2026-11-07T20:06:27.000Z","localChanges":["The Classic interface now comes with its Civ1 classic colours, unless you've chosen a theme in Options (closes #824)."],"externalChanges":{}}
+{"version":"0.1.0@b86e2f2","date":"2026-11-08T11:05:58.000Z","localChanges":["The New interface is now called Modern in Options. A saved choice of New, or a link that asks for it, still opens it (#825)."],"externalChanges":{}}
+,
+{"version":"0.1.0@92ce87cb","date":"2026-11-07T20:06:27.000Z","localChanges":["The Classic interface now comes with its Civ1 classic colours, unless you've chosen a theme in Options (closes #824)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@e6e46bd9","date":"2026-11-07T13:07:35.000Z","localChanges":["The new interface is now the default, in the Slate and brass theme (#735). If you chose an interface or theme in Options, your choice is kept.","Enter now goes through whatever still needs you, and ends the turn once nothing is left. Shift+Enter skips to the next item.","The classic interface is still there for now: choose it under Interface in Options, or add ?interface=classic to the address. The Civ1 classic theme is staying, under Theme in Options."],"externalChanges":{}}
 ,
