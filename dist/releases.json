@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@0a339ec","date":"2026-11-08T20:13:58.000Z","localChanges":["refactor: the worker is a package, ui-worker-client, that shares only the protocol and its transport with the page (#825) (#836)"],"externalChanges":{}}
+{"version":"0.1.0@cc5afdf","date":"2026-11-08T21:21:34.000Z","localChanges":["refactor: the worker transports come from @civ-clone/worker-transport (#825) (#837)"],"externalChanges":{"worker-transport":{"status":"added","log":["feat: a core-data-client transport over a web worker's messages, for the page's end and the worker's"]}}}
+,
+{"version":"0.1.0@0a339eca","date":"2026-11-08T20:13:58.000Z","localChanges":["refactor: the worker is a package, ui-worker-client, that shares only the protocol and its transport with the page (#825) (#836)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@92e5edac","date":"2026-11-08T20:05:15.000Z","localChanges":["refactor: the transport, requests and data patches come from core-data-client, and both worker transports are a package (#825) (#835)"],"externalChanges":{"core-data-client":{"status":"added","log":["feat: a transport contract, requests, data patches and rebuilding, for a client that isn't in the same process"]}}}
 ,
