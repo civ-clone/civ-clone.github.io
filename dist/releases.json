@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@15af8f7","date":"2026-11-08T17:05:09.000Z","localChanges":["refactor: the frontend is a set of workspace packages, one per area (#825) (#832)"],"externalChanges":{}}
+{"version":"0.1.0@261b7e9","date":"2026-11-08T17:42:59.000Z","localChanges":["refactor: the frontend's packages are @civ-clone/ui-*, which the engine tools skip (#825) (#833)"],"externalChanges":{}}
+,
+{"version":"0.1.0@15af8f7c","date":"2026-11-08T17:05:09.000Z","localChanges":["refactor: the frontend is a set of workspace packages, one per area (#825) (#832)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@8345061b","date":"2026-11-08T16:53:02.000Z","localChanges":["refactor: each map grid registers its own projection, and the minimap belongs to the square grid (#825) (#831)"],"externalChanges":{}}
 ,
