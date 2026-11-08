@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@8345061","date":"2026-11-08T16:53:02.000Z","localChanges":["refactor: each map grid registers its own projection, and the minimap belongs to the square grid (#825) (#831)"],"externalChanges":{}}
+{"version":"0.1.0@15af8f7","date":"2026-11-08T17:05:09.000Z","localChanges":["refactor: the frontend is a set of workspace packages, one per area (#825) (#832)"],"externalChanges":{}}
+,
+{"version":"0.1.0@8345061b","date":"2026-11-08T16:53:02.000Z","localChanges":["refactor: each map grid registers its own projection, and the minimap belongs to the square grid (#825) (#831)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@e186b13f","date":"2026-11-08T11:31:15.000Z","localChanges":["test: every frontend file is in an area, and each uses only the areas it may (#825) (#830)"],"externalChanges":{}}
 ,
