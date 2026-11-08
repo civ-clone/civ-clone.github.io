@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@e3553e5","date":"2026-11-08T22:22:28.000Z","localChanges":["refactor: each package brings its own text and styles (#825) (#840)"],"externalChanges":{}}
+{"version":"0.1.0@fd26c0f","date":"2026-11-08T22:48:19.000Z","localChanges":["refactor: each token-driven component is a package of its own, with its styles (#825) (#841)"],"externalChanges":{}}
+,
+{"version":"0.1.0@e3553e51","date":"2026-11-08T22:22:28.000Z","localChanges":["refactor: each package brings its own text and styles (#825) (#840)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@a39f4d3e","date":"2026-11-08T22:07:31.000Z","localChanges":["refactor: what only one interface uses is in that interface's package, and the slots name no interface's pieces (#825) (#839)"],"externalChanges":{}}
 ,
