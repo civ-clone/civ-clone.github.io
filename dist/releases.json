@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@e186b13","date":"2026-11-08T11:31:15.000Z","localChanges":["test: every frontend file is in an area, and each uses only the areas it may (#825) (#830)"],"externalChanges":{}}
+{"version":"0.1.0@8345061","date":"2026-11-08T16:53:02.000Z","localChanges":["refactor: each map grid registers its own projection, and the minimap belongs to the square grid (#825) (#831)"],"externalChanges":{}}
+,
+{"version":"0.1.0@e186b13f","date":"2026-11-08T11:31:15.000Z","localChanges":["test: every frontend file is in an area, and each uses only the areas it may (#825) (#830)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@b86e2f22","date":"2026-11-08T11:05:58.000Z","localChanges":["The New interface is now called Modern in Options. A saved choice of New, or a link that asks for it, still opens it (#825)."],"externalChanges":{}}
 ,
