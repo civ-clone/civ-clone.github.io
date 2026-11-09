@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@fd26c0f","date":"2026-11-08T22:48:19.000Z","localChanges":["refactor: each token-driven component is a package of its own, with its styles (#825) (#841)"],"externalChanges":{}}
+{"version":"0.1.0@1799ea8","date":"2026-11-09T07:40:13.000Z","localChanges":["A loaded game opens on your first city, or your first unit if you have no cities, instead of the corner of the map, which was often unexplored and black (closes #826).","Zoomed all the way out, city banners show each city's name beside its size again (closes #822).","In the Trade report, a city with no upkeep shows 0 rather than -0 (closes #816).","On a phone, the details beside the build list are no longer pressed against the window's edge (closes #827)."],"externalChanges":{}}
+,
+{"version":"0.1.0@fd26c0f4","date":"2026-11-08T22:48:19.000Z","localChanges":["refactor: each token-driven component is a package of its own, with its styles (#825) (#841)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@e3553e51","date":"2026-11-08T22:22:28.000Z","localChanges":["refactor: each package brings its own text and styles (#825) (#840)"],"externalChanges":{}}
 ,
