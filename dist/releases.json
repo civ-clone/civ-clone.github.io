@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@17c30c5","date":"2026-11-10T11:22:19.000Z","localChanges":["refactor: each grid registers its own minimap and overview, so the game names neither (#936)"],"externalChanges":{}}
+{"version":"0.1.0@9ad801d","date":"2026-11-10T11:38:21.000Z","localChanges":["refactor: the music and sound drivers are a package of their own (#937)"],"externalChanges":{}}
+,
+{"version":"0.1.0@17c30c57","date":"2026-11-10T11:22:19.000Z","localChanges":["refactor: each grid registers its own minimap and overview, so the game names neither (#936)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@bc0691e3","date":"2026-11-10T11:16:52.000Z","localChanges":["refactor: the classic game setup window draws the shared setup model (#935)"],"externalChanges":{}}
 ,
