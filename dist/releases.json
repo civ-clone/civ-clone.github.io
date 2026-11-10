@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@eb7f689","date":"2026-11-10T19:47:04.000Z","localChanges":["refactor: what your cities choose by themselves is kept by the game being played (#873) (#948)"],"externalChanges":{"civ1-unit":{"status":"updated","log":["feat: a city's own choices follow its game's build preferences (civ-clone/web-renderer#873) (#42)"]},"core-game":{"status":"updated","log":["feat: each game has its own build preferences (civ-clone/web-renderer#873) (#11)"]},"core-save-game":{"status":"updated","log":["feat: a game's build preferences are carried to a loaded game, not saved (civ-clone/web-renderer#873) (#14)"]}}}
+{"version":"0.1.0@93324a0","date":"2026-11-10T21:05:45.000Z","localChanges":["refactor: starting a game, and the engine's worker, are each set up in named steps (#869) (#950)"],"externalChanges":{}}
+,
+{"version":"0.1.0@eb7f689a","date":"2026-11-10T19:47:04.000Z","localChanges":["refactor: what your cities choose by themselves is kept by the game being played (#873) (#948)"],"externalChanges":{"civ1-unit":{"status":"updated","log":["feat: a city's own choices follow its game's build preferences (civ-clone/web-renderer#873) (#42)"]},"core-game":{"status":"updated","log":["feat: each game has its own build preferences (civ-clone/web-renderer#873) (#11)"]},"core-save-game":{"status":"updated","log":["feat: a game's build preferences are carried to a loaded game, not saved (civ-clone/web-renderer#873) (#14)"]}}}
 ,
 {"version":"0.1.0@0db65b06","date":"2026-11-10T19:21:45.000Z","localChanges":["chore: the game is built with a current esbuild, and the tests check that no rule is registered where a save would lose it (#869) (#947)"],"externalChanges":{}}
 ,
