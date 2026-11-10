@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@b1f52e4","date":"2026-11-10T09:53:48.000Z","localChanges":["refactor: the end-turn area is a slot each interface fills (#928)"],"externalChanges":{}}
+{"version":"0.1.0@b903b1d","date":"2026-11-10T10:08:10.000Z","localChanges":["refactor: a window's chrome is a slot each interface fills (#930)"],"externalChanges":{}}
+,
+{"version":"0.1.0@b1f52e4d","date":"2026-11-10T09:53:48.000Z","localChanges":["refactor: the end-turn area is a slot each interface fills (#928)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@b47abdde","date":"2026-11-10T09:41:06.000Z","localChanges":["refactor: the Game menu and the unit's menu are a slot each interface fills (#927)"],"externalChanges":{}}
 ,
