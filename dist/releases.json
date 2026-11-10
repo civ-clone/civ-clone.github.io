@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@af3c89c","date":"2026-11-10T09:32:47.000Z","localChanges":["A city's new name is now kept from later cities by the game's rules rather than by the page, so it holds however the city came to be renamed (closes #876)."],"externalChanges":{"civ1-city":{"status":"updated","log":["A city's new name is now kept from later cities however the city came to be renamed, not only when you rename it yourself (civ-clone/web-renderer#876)."]},"core-city":{"status":"updated","log":["Renaming a city now tells the rules about it, so they can keep its new name from being given to another city (civ-clone/web-renderer#876)."]}}}
+,
 {"version":"0.1.0@09abe8d","date":"2026-11-10T09:22:14.000Z","localChanges":["test: the built game is opened in a real browser on every pull request, where a save loads and every report and a city open under both interfaces (closes #878) (#925)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@9310bf2","date":"2026-11-10T09:21:15.000Z","localChanges":["refactor: the talks are a slot each interface fills (#924)"],"externalChanges":{}}
