@@ -1,7 +1,9 @@
 [
-{"version":"0.1.0@a1d1b6a","date":"2026-11-10T10:31:19.000Z","localChanges":["chore: npm test runs its suites side by side, and CI is one job that skips docs-only pull requests (closes #879) (#929)"],"externalChanges":{}}
+{"version":"0.1.0@5711ca9","date":"2026-11-10T10:45:56.000Z","localChanges":["refactor: the classic city screen lives in the classic interface (#932)"],"externalChanges":{}}
 ,
-{"version":"0.1.0@7b3d0bc","date":"2026-11-10T10:29:00.000Z","localChanges":["refactor: slot and feature names are checked, and slot contracts name no interface's pieces (#931)"],"externalChanges":{}}
+{"version":"0.1.0@a1d1b6ac","date":"2026-11-10T10:31:19.000Z","localChanges":["chore: npm test runs its suites side by side, and CI is one job that skips docs-only pull requests (closes #879) (#929)"],"externalChanges":{}}
+,
+{"version":"0.1.0@7b3d0bcc","date":"2026-11-10T10:29:00.000Z","localChanges":["refactor: slot and feature names are checked, and slot contracts name no interface's pieces (#931)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@b903b1d5","date":"2026-11-10T10:08:10.000Z","localChanges":["refactor: a window's chrome is a slot each interface fills (#930)"],"externalChanges":{}}
 ,
