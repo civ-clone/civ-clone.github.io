@@ -1,0 +1,630 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://civ.one/dist/tileset.schema.json",
+  "title": "civ.one tileset descriptor",
+  "description": "What a tileset says about itself: the grid it is drawn for, its native tile size, the map scales it can be shown at, the sprites it has, how the sprites for each kind of thing are named and put together, and how player colours go onto units and cities. Sprite names leave out the store's prefix and extension (terrain/hills_nes, not ./assets/terrain/hills_nes.png). Sizes and offsets are in the pack's native pixels; the renderer multiplies them by the map scale. A {placeholder} in a sprite name is filled from engine names and directions. civ.one also checks what a schema cannot say: that each name's placeholders are ones the map fills, that the grid is one the engine knows, that defaultScale is one of scales, that no sprite is listed twice, and that sizes which depend on each other agree.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "description": "This schema, for an editor to check the descriptor against and explain each field: ./tileset.schema.json beside civ.one's own."
+    },
+    "schema": {
+      "title": "Descriptor format",
+      "description": "The descriptor format, 1: any other is refused, so a newer pack is not half-drawn.",
+      "const": 1,
+      "x-message": "schema {value} cannot be read here, only schema 1. A newer civ.one may read it."
+    },
+    "kind": {
+      "title": "Kind of pack",
+      "const": "tileset",
+      "x-message": "kind must be \"tileset\", not {value}."
+    },
+    "id": {
+      "title": "Id",
+      "description": "The tileset's id, which other packs' fallback names it by.",
+      "type": "string",
+      "minLength": 1,
+      "x-message": "id must be a non-empty string."
+    },
+    "name": {
+      "title": "Name",
+      "description": "The tileset's name, as a player sees it.",
+      "type": "string",
+      "minLength": 1,
+      "x-message": "name must be a non-empty string."
+    },
+    "grid": {
+      "title": "Grid",
+      "description": "The grid it is drawn for, as the engine names it: a game on any other grid cannot use it.",
+      "type": "string",
+      "examples": ["square", "staggered-iso", "hex-odd-r"],
+      "x-message": "grid {value} is not one of {grids}."
+    },
+    "tile": {
+      "title": "Tile",
+      "description": "One tile's footprint, in native px.",
+      "type": "object",
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      },
+      "required": ["width", "height"],
+      "x-message": "tile must have a whole width and height of at least 1 px."
+    },
+    "geometry": {
+      "title": "Geometry",
+      "description": "Where tiles go and how far sprites reach out of them.",
+      "type": "object",
+      "properties": {
+        "columnStep": {
+          "description": "How far apart, in native px, neighbouring columns of tiles are.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "rowStep": {
+          "description": "How far apart, in native px, neighbouring rows of tiles are.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "oddRowShift": {
+          "description": "How far odd rows are pushed across, for staggered and hex grids.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "anchor": {
+          "description": "Where a tile-sized sprite's top-left corner goes in the tile.",
+          "allOf": [{ "$ref": "#/$defs/point" }]
+        },
+        "overhang": {
+          "description": "How far tall sprites reach out of their tile, for the layers to leave room for.",
+          "type": "object",
+          "properties": {
+            "top": { "type": "integer", "minimum": 0 },
+            "right": { "type": "integer", "minimum": 0 },
+            "bottom": { "type": "integer", "minimum": 0 },
+            "left": { "type": "integer", "minimum": 0 }
+          },
+          "required": ["top", "right", "bottom", "left"],
+          "x-message": "geometry.overhang must have a whole top, right, bottom and left of 0 px or more."
+        }
+      },
+      "required": [
+        "columnStep",
+        "rowStep",
+        "oddRowShift",
+        "anchor",
+        "overhang"
+      ],
+      "x-message": "geometry must have whole column and row steps of at least 1 px, an odd row shift, an anchor and an overhang."
+    },
+    "scales": {
+      "title": "Map scales",
+      "description": "The map scales it can be shown at.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "integer", "minimum": 1 },
+      "x-message": "scales must list at least one whole scale of 1 or more."
+    },
+    "defaultScale": {
+      "title": "Starting map scale",
+      "description": "The map scale a player starts on: one of scales.",
+      "type": "integer",
+      "minimum": 1,
+      "x-message": "defaultScale {value} is not in scales."
+    },
+    "storage": {
+      "title": "Storage",
+      "description": "Where its sprites are kept: a sprite's key in the store is prefix + name + ext, such as ./assets/terrain/land.png.",
+      "type": "object",
+      "properties": {
+        "prefix": { "type": "string" },
+        "ext": { "type": "string" }
+      },
+      "required": ["prefix", "ext"],
+      "x-message": "storage must have a prefix and an ext."
+    },
+    "fallback": {
+      "title": "Fallback tileset",
+      "description": "The id of the tileset a missing optional sprite may come from, or null.",
+      "type": ["string", "null"],
+      "x-message": "fallback must be a tileset id or null."
+    },
+    "assets": {
+      "title": "Sprites",
+      "description": "The sprites it has. No sprite is listed twice, in either list.",
+      "type": "object",
+      "properties": {
+        "required": {
+          "description": "Without every one of these it is not installed.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/spriteName" },
+          "minItems": 1,
+          "x-message": {
+            "minItems": "assets.required must list at least one sprite."
+          }
+        },
+        "optional": {
+          "description": "Drawn when there, skipped (or taken from fallback) when not.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/spriteName" }
+        },
+        "ui": {
+          "description": "Name prefixes that are the interface's art rather than the map's, such as city/.",
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["required", "optional", "ui"],
+      "x-message": "assets must list its required, optional and ui sprites."
+    },
+    "names": {
+      "title": "Words in sprite names",
+      "description": "Engine names to the words in sprite names, where they are not just the lower-cased name.",
+      "type": "object",
+      "properties": {
+        "terrain": {
+          "description": "By terrain, such as Ocean.",
+          "allOf": [{ "$ref": "#/$defs/words" }]
+        },
+        "special": {
+          "description": "By terrain and feature, such as Forest:Game.",
+          "allOf": [{ "$ref": "#/$defs/words" }]
+        },
+        "unit": {
+          "description": "By unit, such as Settlers.",
+          "allOf": [{ "$ref": "#/$defs/words" }]
+        }
+      },
+      "required": ["terrain", "special", "unit"],
+      "x-message": "names must be an object."
+    },
+    "families": {
+      "title": "Sprite families",
+      "description": "How the sprites for each kind of thing on the map are named and put together.",
+      "type": "object",
+      "properties": {
+        "base": {
+          "description": "The sprites under everything: land and ocean.",
+          "type": "object",
+          "properties": {
+            "land": { "type": "string", "minLength": 1 },
+            "ocean": { "type": "string", "minLength": 1 }
+          },
+          "required": ["land", "ocean"],
+          "x-message": "families.base must name the land and ocean sprites."
+        },
+        "terrain": {
+          "description": "Terrain, joined to its neighbours. Its names may have {terrain}.",
+          "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
+        },
+        "coast": {
+          "description": "The coast: quarter-tile corners, each picked by the neighbours touching it. Only a coast cut from one strip can be drawn yet.",
+          "type": "object",
+          "properties": {
+            "method": { "const": "corners" },
+            "neighbours": { "$ref": "#/$defs/neighbours" },
+            "strip": {
+              "description": "Civ1's coast: one strip of cell-wide columns, each two quarter-sized corners across and down.",
+              "type": "object",
+              "properties": {
+                "sprite": { "$ref": "#/$defs/sprite" },
+                "quarter": {
+                  "description": "A corner's size, in native px.",
+                  "allOf": [{ "$ref": "#/$defs/px" }]
+                },
+                "cell": {
+                  "description": "A column's width, in native px: two quarters.",
+                  "type": "integer",
+                  "x-message": "{path} must be two quarters, {twoQuarters}, not {value}."
+                }
+              },
+              "required": ["sprite", "quarter", "cell"],
+              "x-message": "families.coast must have a strip: only a coast cut from one strip can be drawn yet."
+            },
+            "sprite": {
+              "description": "Quarter sprites by name, for packs that slice them (terrain/coast/{corner}-{bits}).",
+              "type": "string",
+              "x-message": "{path} must be a sprite name."
+            },
+            "corners": {
+              "type": "array",
+              "items": { "type": "string" },
+              "x-message": "{path} must list the corners' names."
+            },
+            "order": {
+              "description": "The order of the neighbours in the bitmask, least significant first: each of a square tile's eight once.",
+              "type": "array",
+              "items": { "type": "string" },
+              "x-message": "{path} must list each of a square tile's eight neighbours ({directions}) once, as a coast strip is cut for them."
+            }
+          },
+          "required": ["method", "strip", "order"],
+          "x-message": "families.coast must be a corners family."
+        },
+        "riverMouth": {
+          "description": "Where a river meets the sea.",
+          "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
+        },
+        "irrigation": {
+          "description": "Irrigation: one sprite.",
+          "allOf": [{ "$ref": "#/$defs/mapFamily" }],
+          "properties": {
+            "method": { "$ref": "#/$defs/noMethod" },
+            "overTerrain": {
+              "description": "Drawn over the terrain instead of under it, for a tileset whose terrain covers the land.",
+              "type": "boolean",
+              "x-message": "{path} is for irrigation only: true or false."
+            }
+          }
+        },
+        "mine": {
+          "description": "A mine: one sprite.",
+          "allOf": [{ "$ref": "#/$defs/singleFamily" }]
+        },
+        "pollution": {
+          "description": "Pollution: one sprite.",
+          "allOf": [{ "$ref": "#/$defs/singleFamily" }]
+        },
+        "road": {
+          "description": "Roads, joined to their neighbours.",
+          "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
+        },
+        "railroad": {
+          "description": "Railroads, joined to their neighbours.",
+          "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
+        },
+        "fog": {
+          "description": "The edge of what a player has seen.",
+          "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
+        },
+        "special": {
+          "description": "Special resources: one sprite each. Its names may have {special}.",
+          "allOf": [{ "$ref": "#/$defs/singleFamily" }]
+        },
+        "hut": {
+          "description": "A hut: one sprite.",
+          "allOf": [{ "$ref": "#/$defs/singleFamily" }]
+        }
+      },
+      "required": [
+        "base",
+        "terrain",
+        "coast",
+        "riverMouth",
+        "irrigation",
+        "mine",
+        "pollution",
+        "road",
+        "railroad",
+        "fog",
+        "special",
+        "hut"
+      ],
+      "x-message": "families must be an object."
+    },
+    "units": {
+      "title": "Units",
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "description": "A unit's sprite. Its name may have {unit}.",
+          "allOf": [{ "$ref": "#/$defs/sprite" }]
+        },
+        "fortified": {
+          "description": "Drawn over a fortified unit.",
+          "allOf": [{ "$ref": "#/$defs/sprite" }]
+        },
+        "colouring": { "$ref": "#/$defs/colouring" },
+        "stackOffset": {
+          "description": "Where the copy that shows a stack is drawn, from the unit.",
+          "allOf": [{ "$ref": "#/$defs/point" }]
+        },
+        "status": {
+          "description": "The busy unit's letter: across at x of the tile, on a baseline at baseline of it, fontSize native px.",
+          "type": "object",
+          "properties": {
+            "fontSize": { "$ref": "#/$defs/px" },
+            "x": {
+              "type": "number",
+              "x-message": "units.status must have an x and a baseline, as parts of the tile."
+            },
+            "baseline": {
+              "type": "number",
+              "x-message": "units.status must have an x and a baseline, as parts of the tile."
+            }
+          },
+          "required": ["fontSize", "x", "baseline"],
+          "x-message": "units.status.fontSize must be a whole number of px, 1 or more."
+        }
+      },
+      "required": ["sprite", "fortified", "colouring", "stackOffset", "status"],
+      "x-message": "units must be an object."
+    },
+    "cities": {
+      "title": "Cities",
+      "type": "object",
+      "properties": {
+        "mode": {
+          "description": "box: the sprite in a box of the player's first colour, inset px in from the tile, on a box of occupied when the city has units in it. (styles, a sprite per style, size and walls, cannot be drawn yet.)",
+          "const": "box",
+          "x-message": "cities.mode {value} cannot be drawn yet: only box."
+        },
+        "sprite": { "$ref": "#/$defs/sprite" },
+        "colouring": { "$ref": "#/$defs/colouring" },
+        "inset": {
+          "description": "How far in from the tile the box is, in native px.",
+          "type": "integer",
+          "minimum": 0,
+          "x-message": "cities.inset must be a whole number of px, 0 or more."
+        },
+        "occupied": {
+          "description": "The box's colour when the city has units in it.",
+          "allOf": [{ "$ref": "#/$defs/colour" }],
+          "x-message": "cities.occupied must be a colour."
+        },
+        "labels": {
+          "description": "Where a city's size and name go: across at x of the tile (within it), on baselines at those parts of it, and the unhappy citizen in place of the size at disorderIcon native px from its corner (within it).",
+          "type": "object",
+          "properties": {
+            "fontSize": { "$ref": "#/$defs/px" },
+            "x": {
+              "type": "number",
+              "x-message": "cities.labels must have an x, a sizeBaseline and a nameBaseline, as parts of the tile.",
+              "allOf": [
+                {
+                  "minimum": 0,
+                  "maximum": 1,
+                  "x-message": "cities.labels.x must be within the tile, from 0 to 1."
+                }
+              ]
+            },
+            "sizeBaseline": {
+              "type": "number",
+              "x-message": "cities.labels must have an x, a sizeBaseline and a nameBaseline, as parts of the tile."
+            },
+            "nameBaseline": {
+              "type": "number",
+              "x-message": "cities.labels must have an x, a sizeBaseline and a nameBaseline, as parts of the tile."
+            },
+            "disorderIcon": {
+              "type": "object",
+              "properties": {
+                "x": { "type": "integer", "minimum": 0 },
+                "y": { "type": "integer", "minimum": 0 }
+              },
+              "required": ["x", "y"],
+              "x-message": "cities.labels.disorderIcon must have a whole x and y in px, within the tile."
+            }
+          },
+          "required": [
+            "fontSize",
+            "x",
+            "sizeBaseline",
+            "nameBaseline",
+            "disorderIcon"
+          ],
+          "x-message": "cities.labels.fontSize must be a whole number of px, 1 or more."
+        }
+      },
+      "required": [
+        "mode",
+        "sprite",
+        "colouring",
+        "inset",
+        "occupied",
+        "labels"
+      ],
+      "x-message": "cities must be an object."
+    },
+    "ui": {
+      "title": "Interface sizes",
+      "description": "The sizes the interface shows the tileset's sprites at outside the map, in CSS px. Each sprite is enlarged a whole number of times to at least this width, then shown at this size; except the cursor, which is shown at the enlarged size. Civ1's sizes for any left out.",
+      "type": "object",
+      "properties": {
+        "icon": {
+          "description": "A yield's icon. 14 when left out.",
+          "allOf": [{ "$ref": "#/$defs/px" }]
+        },
+        "citizen": {
+          "description": "A citizen, step apart, so they overlap where step is less than width. 16 and 12 when left out.",
+          "type": "object",
+          "properties": {
+            "width": { "$ref": "#/$defs/px" },
+            "step": { "$ref": "#/$defs/px" }
+          },
+          "x-message": "ui must be an object, and its citizen too."
+        },
+        "cursor": {
+          "description": "The cursor. 26 when left out.",
+          "allOf": [{ "$ref": "#/$defs/px" }]
+        }
+      },
+      "x-message": "ui must be an object, and its citizen too."
+    }
+  },
+  "required": [
+    "schema",
+    "kind",
+    "id",
+    "name",
+    "grid",
+    "tile",
+    "geometry",
+    "scales",
+    "defaultScale",
+    "storage",
+    "fallback",
+    "assets",
+    "names",
+    "families",
+    "units",
+    "cities"
+  ],
+  "$defs": {
+    "px": {
+      "description": "A whole number of px, 1 or more.",
+      "type": "integer",
+      "minimum": 1,
+      "x-message": "{path} must be a whole number of px, 1 or more."
+    },
+    "point": {
+      "description": "A whole x and y in native px.",
+      "type": "object",
+      "properties": {
+        "x": { "type": "integer" },
+        "y": { "type": "integer" }
+      },
+      "required": ["x", "y"],
+      "x-message": "{path} must have a whole x and y in px."
+    },
+    "sprite": {
+      "description": "A sprite's name, without the store's prefix and extension.",
+      "type": "string",
+      "minLength": 1,
+      "x-message": "{path} must name a sprite."
+    },
+    "spriteName": {
+      "type": "string",
+      "minLength": 1,
+      "x-message": { "minLength": "assets lists an empty sprite name." }
+    },
+    "colour": {
+      "description": "A colour as #rgb, #rrggbb, rgb(…) or rgba(…).",
+      "type": "string",
+      "pattern": "^(#[0-9a-fA-F]{3}|#[0-9a-fA-F]{6}|[rR][gG][bB][aA]?\\([\\d\\s.,]+\\))$"
+    },
+    "words": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "x-message": "{path} must map engine names to words in sprite names."
+    },
+    "neighbours": {
+      "description": "Which neighbours a family looks at: edges, the ones sharing an edge, or all. The direction names come from the world's topology.",
+      "enum": ["edges", "all"],
+      "x-message": "{path} must be \"edges\" or \"all\"."
+    },
+    "methodDrawn": {
+      "not": { "enum": ["corners", "dither"] },
+      "x-message": "{path} {value} cannot be drawn yet (#92)."
+    },
+    "noMethod": {
+      "description": "None: this family is one sprite, drawn whatever its neighbours.",
+      "allOf": [{ "$ref": "#/$defs/methodDrawn" }],
+      "not": {},
+      "x-message": "{parent} is one sprite, drawn whatever its neighbours: it has no method."
+    },
+    "noOverTerrain": {
+      "description": "For irrigation only.",
+      "not": {},
+      "x-message": "{path} is for irrigation only: true or false."
+    },
+    "mapFamily": {
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "description": "The sprite's name, with {placeholders} filled from engine names and directions: {dir} for edges, {dirs} for bitmask.",
+          "allOf": [{ "$ref": "#/$defs/sprite" }]
+        },
+        "isolated": {
+          "description": "What is drawn with no matching neighbour: a sprite, or a square of colour dot, size px across, in the middle.",
+          "anyOf": [
+            { "type": "string", "minLength": 1 },
+            {
+              "type": "object",
+              "properties": {
+                "dot": { "$ref": "#/$defs/colour" },
+                "size": { "type": "integer", "minimum": 1 }
+              },
+              "required": ["dot", "size"]
+            }
+          ],
+          "x-message": "{path} must be a sprite, or a dot with a colour and a whole size of 1 px or more."
+        },
+        "join": {
+          "description": "How the directions in {dirs} are written together: \"\" gives nes, \"-\" gives ne-sw.",
+          "type": "string",
+          "x-message": "{path} must be a string, what goes between the directions in {dirs}."
+        },
+        "skip": {
+          "description": "Terrain this family is not drawn on.",
+          "type": "array",
+          "items": { "type": "string" },
+          "x-message": "{path} must list terrain names."
+        },
+        "matches": {
+          "description": "For each terrain, what counts as a match beside it when not the same terrain; @water is any water.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "x-message": "{path} must list, for each terrain, what joins it."
+        },
+        "anchors": {
+          "description": "Where sprites smaller than a tile go in it, by engine name.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "x": { "type": "integer" },
+              "y": { "type": "integer" }
+            },
+            "required": ["x", "y"]
+          },
+          "x-message": "{path} must give a whole x and y in px for each name."
+        }
+      },
+      "required": ["sprite"],
+      "x-message": "{path} must be an object."
+    },
+    "joiningFamily": {
+      "description": "A family joined to its neighbours: one whole-tile sprite per combination of them (bitmask), or one overlay per matching neighbour (edges).",
+      "allOf": [{ "$ref": "#/$defs/mapFamily" }],
+      "properties": {
+        "method": {
+          "allOf": [{ "$ref": "#/$defs/methodDrawn" }],
+          "enum": ["bitmask", "edges"],
+          "x-message": "{path} must be \"bitmask\" or \"edges\": it joins its neighbours."
+        },
+        "neighbours": { "$ref": "#/$defs/neighbours" },
+        "overTerrain": { "$ref": "#/$defs/noOverTerrain" }
+      },
+      "required": ["method", "neighbours"]
+    },
+    "singleFamily": {
+      "description": "A family of one sprite, drawn whatever its neighbours.",
+      "allOf": [{ "$ref": "#/$defs/mapFamily" }],
+      "properties": {
+        "method": { "$ref": "#/$defs/noMethod" },
+        "neighbours": {
+          "description": "Not read: a family of one sprite is drawn whatever its neighbours."
+        },
+        "overTerrain": { "$ref": "#/$defs/noOverTerrain" }
+      }
+    },
+    "colouring": {
+      "description": "How player colours go on: the sprite's keys colours are swapped for the player's, colours saying which of the player's replaces each key, by index (0, 1, … in order when left out). (An overlay in the player's colour cannot be drawn yet.)",
+      "type": "object",
+      "properties": {
+        "mode": {
+          "const": "replaceColours",
+          "x-message": "{path} {value} cannot be drawn yet: only replaceColours."
+        },
+        "keys": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/colour" },
+          "x-message": "{path} must list the colours to replace."
+        },
+        "colours": {
+          "description": "One for each key.",
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "x-message": "{path} must give a player's colour, by whole index, for each key."
+        }
+      },
+      "required": ["mode", "keys"],
+      "x-message": "{path} must say how player colours go on."
+    }
+  }
+}
