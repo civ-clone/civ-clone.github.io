@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@dcf83c2","date":"2026-11-10T15:51:09.000Z","localChanges":["refactor: each frontend package declares the engine and npm packages it imports, and what it exports (#862) (#946)"],"externalChanges":{}}
+{"version":"0.1.0@0db65b0","date":"2026-11-10T19:21:45.000Z","localChanges":["chore: the game is built with a current esbuild, and the tests check that no rule is registered where a save would lose it (#869) (#947)"],"externalChanges":{}}
+,
+{"version":"0.1.0@dcf83c27","date":"2026-11-10T15:51:09.000Z","localChanges":["refactor: each frontend package declares the engine and npm packages it imports, and what it exports (#862) (#946)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@8dac3b14","date":"2026-11-10T15:38:58.000Z","localChanges":["refactor: the worker client asks Civ1's worker rules for what only Civ1 has (#865) (#945)"],"externalChanges":{}}
 ,
