@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@3fa34c9","date":"2026-11-10T11:08:38.000Z","localChanges":["refactor: the map's input controller and the cheat windows live in the game package (#934)"],"externalChanges":{}}
+{"version":"0.1.0@bc0691e","date":"2026-11-10T11:16:52.000Z","localChanges":["refactor: the classic game setup window draws the shared setup model (#935)"],"externalChanges":{}}
+,
+{"version":"0.1.0@3fa34c9a","date":"2026-11-10T11:08:38.000Z","localChanges":["refactor: the map's input controller and the cheat windows live in the game package (#934)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@3a82904f","date":"2026-11-10T10:58:16.000Z","localChanges":["refactor: themes are registered by the interfaces that bring them, and no interface id is hard-coded (#933)"],"externalChanges":{}}
 ,
