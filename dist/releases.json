@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@65719d4","date":"2026-11-10T11:43:33.000Z","localChanges":["chore: the nine engine packages the UI imports are declared in the root package.json (#938)"],"externalChanges":{}}
+{"version":"0.1.0@efb1929","date":"2026-11-10T12:52:06.000Z","localChanges":["refactor: the city screen is a package of its own (#939)"],"externalChanges":{}}
+,
+{"version":"0.1.0@65719d4e","date":"2026-11-10T11:43:33.000Z","localChanges":["chore: the nine engine packages the UI imports are declared in the root package.json (#938)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@9ad801d3","date":"2026-11-10T11:38:21.000Z","localChanges":["refactor: the music and sound drivers are a package of their own (#937)"],"externalChanges":{}}
 ,
