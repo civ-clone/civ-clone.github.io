@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@91053f6","date":"2026-11-10T13:06:40.000Z","localChanges":["refactor: the reports are a package of their own (#940)"],"externalChanges":{}}
+{"version":"0.1.0@9865189","date":"2026-11-10T13:20:20.000Z","localChanges":["refactor: the HUD is a package of its own (#941)"],"externalChanges":{}}
+,
+{"version":"0.1.0@91053f62","date":"2026-11-10T13:06:40.000Z","localChanges":["refactor: the reports are a package of their own (#940)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@efb19290","date":"2026-11-10T12:52:06.000Z","localChanges":["refactor: the city screen is a package of its own (#939)"],"externalChanges":{}}
 ,
