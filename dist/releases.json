@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@9865189","date":"2026-11-10T13:20:20.000Z","localChanges":["refactor: the HUD is a package of its own (#941)"],"externalChanges":{}}
+{"version":"0.1.0@426f1ee","date":"2026-11-10T13:36:32.000Z","localChanges":["refactor: the menus are a package of their own, and windows is gone (#942)"],"externalChanges":{}}
+,
+{"version":"0.1.0@98651891","date":"2026-11-10T13:20:20.000Z","localChanges":["refactor: the HUD is a package of its own (#941)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@91053f62","date":"2026-11-10T13:06:40.000Z","localChanges":["refactor: the reports are a package of their own (#940)"],"externalChanges":{}}
 ,
