@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@8dac3b1","date":"2026-11-10T15:38:58.000Z","localChanges":["refactor: the worker client asks Civ1's worker rules for what only Civ1 has (#865) (#945)"],"externalChanges":{}}
+{"version":"0.1.0@dcf83c2","date":"2026-11-10T15:51:09.000Z","localChanges":["refactor: each frontend package declares the engine and npm packages it imports, and what it exports (#862) (#946)"],"externalChanges":{}}
+,
+{"version":"0.1.0@8dac3b14","date":"2026-11-10T15:38:58.000Z","localChanges":["refactor: the worker client asks Civ1's worker rules for what only Civ1 has (#865) (#945)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@12ce0b85","date":"2026-11-10T14:40:33.000Z","localChanges":["refactor: options, storage, locale, interfaces and glyphs are a platform package under the components (#864) (#944)"],"externalChanges":{}}
 ,
