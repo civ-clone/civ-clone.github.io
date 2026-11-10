@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@b903b1d","date":"2026-11-10T10:08:10.000Z","localChanges":["refactor: a window's chrome is a slot each interface fills (#930)"],"externalChanges":{}}
+{"version":"0.1.0@7b3d0bc","date":"2026-11-10T10:29:00.000Z","localChanges":["refactor: slot and feature names are checked, and slot contracts name no interface's pieces (#931)"],"externalChanges":{}}
+,
+{"version":"0.1.0@b903b1d5","date":"2026-11-10T10:08:10.000Z","localChanges":["refactor: a window's chrome is a slot each interface fills (#930)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@b1f52e4d","date":"2026-11-10T09:53:48.000Z","localChanges":["refactor: the end-turn area is a slot each interface fills (#928)"],"externalChanges":{}}
 ,
