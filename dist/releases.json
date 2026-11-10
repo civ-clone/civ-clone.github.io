@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@09abe8d","date":"2026-11-10T09:22:14.000Z","localChanges":["test: the built game is opened in a real browser on every pull request, where a save loads and every report and a city open under both interfaces (closes #878) (#925)"],"externalChanges":{}}
+,
 {"version":"0.1.0@9310bf2","date":"2026-11-10T09:21:15.000Z","localChanges":["refactor: the talks are a slot each interface fills (#924)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@6fca5afe","date":"2026-11-10T09:10:53.000Z","localChanges":["refactor: the unit panel is a slot each interface fills (#922)"],"externalChanges":{}}
