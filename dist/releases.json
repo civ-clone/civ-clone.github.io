@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@fd09a91","date":"2026-11-12T09:53:54.000Z","localChanges":["chore: the city screen can show a city on an isometric map, not offered yet (#97) (#991)"],"externalChanges":{}}
+{"version":"0.1.0@8bbad6c9","date":"2026-11-12T11:29:29.000Z","localChanges":["You can now play on an isometric map drawn with art imported from your own copy of Civilization II: import its TERRAIN1.GIF, TERRAIN2.GIF, UNITS.GIF and CITIES.GIF in Import assets, then choose the isometric grid when starting a game (#97, #152).","Import assets and Options say whether Civilization II's map art is complete and which of its files are still to import, and Import assets names a file it couldn't read (#97).","Loading an isometric save before Civilization II's art is imported says to import it first (#97)."],"externalChanges":{}}
+,
+{"version":"0.1.0@fd09a915","date":"2026-11-12T09:53:54.000Z","localChanges":["chore: the city screen can show a city on an isometric map, not offered yet (#97) (#991)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@ae475544","date":"2026-11-12T09:42:29.000Z","localChanges":["chore: the map can draw isometric units and cities with flags and shields in the player's colours, not offered yet (#97) (#990)"],"externalChanges":{}}
 ,
