@@ -474,6 +474,59 @@
       "required": ["mode", "sprite", "colouring", "labels"],
       "x-message": "cities must be an object."
     },
+    "yields": {
+      "title": "Yield icons on the map",
+      "description": "The pack's own icons for a worked square's yields on the map, in place of the interface tileset's city/<yield>. An icon that isn't imported, or a yield names leaves out, is drawn with the interface's. Left out, the map draws the interface's icons from the top-left corner of the tile's box.",
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "description": "The icon's name, with {yield} filled from names, such as icons/{yield}. Each icon is listed in assets, as a rule under optional.",
+          "allOf": [
+            {
+              "$ref": "#/$defs/sprite"
+            }
+          ]
+        },
+        "names": {
+          "description": "By yield, as the engine names it (Food, Production, Trade), the word {yield} is filled with.",
+          "allOf": [
+            {
+              "$ref": "#/$defs/words"
+            }
+          ]
+        },
+        "area": {
+          "description": "The part of the tile the icons are laid out in, centred and closer together the more there are, as parts of the tile's width and height from its top-left corner: on a diamond, the middle of it. The whole tile when left out.",
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "y": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "width": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "height": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": ["x", "y", "width", "height"],
+          "x-message": "yields.area must have an x, a y, a width and a height, each a part of the tile from 0 to 1."
+        }
+      },
+      "required": ["sprite", "names"],
+      "x-message": "yields must be an object with a sprite and names."
+    },
     "ui": {
       "title": "Interface sizes",
       "description": "The sizes the interface shows the tileset's sprites at outside the map, in CSS px. Each sprite is enlarged a whole number of times to at least this width, then shown at this size; except the cursor, which is shown at the enlarged size. Civ1's sizes for any left out.",

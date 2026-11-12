@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@ca322ce4","date":"2026-11-12T14:57:02.000Z","localChanges":["On an isometric map, worked squares show Civilization II's own food, shield and trade icons once you import its ICONS.GIF in Import assets (#999).","ICONS.GIF is optional: the isometric map doesn't need it, and shows Civilization's icons until it is imported (#999).","On the isometric map, a square's yield icons now sit in the middle of the square instead of spilling over its neighbours (#999)."],"externalChanges":{"civ2-asset-extractor":{"status":"updated","log":["The digits in a coast quarter's name run anticlockwise round it: n-011 has land to the N and NW, not the N and NE. Checked against a real copy's sprites.","icons/food, shield, trade, luxury, gold and science are the 14×14 icons, and icons/small/ has the same six at 10×10. ICONS.GIF is optional: without it the map sprites are still extracted."]}}}
+,
 {"version":"0.1.0@9c2a01c5","date":"2026-11-12T13:50:13.000Z","localChanges":["refactor: Civilization II's art pack is its own package, tileset-civ2 (#97) (#1002)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@b291f4bd","date":"2026-11-12T13:33:30.000Z","localChanges":["refactor: Civilization I's art pack is its own package, tileset-civ1 (#97) (#1001)"],"externalChanges":{}}
