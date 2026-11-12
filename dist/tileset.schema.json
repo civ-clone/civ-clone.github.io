@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://civ.one/dist/tileset.schema.json",
   "title": "civ.one tileset descriptor",
-  "description": "What a tileset says about itself: the grid it is drawn for, its native tile size, the map scales it can be shown at, the sprites it has, how the sprites for each kind of thing are named and put together, and how player colours go onto units and cities. Sprite names leave out the store's prefix and extension (terrain/hills_nes, not ./assets/terrain/hills_nes.png). Sizes and offsets are in the pack's native pixels; the renderer multiplies them by the map scale. A {placeholder} in a sprite name is filled from engine names and directions. civ.one also checks what a schema cannot say: that each name's placeholders are ones the map fills, that the grid is one the engine knows, that defaultScale is one of scales, that no sprite is listed twice, and that sizes which depend on each other agree.",
+  "description": "What a tileset says about itself: the grid it is drawn for, its native tile size, the map scales it can be shown at, the sprites it has, how the sprites for each kind of thing are named and put together, and how player colours go onto units and cities. Sprite names leave out the store's prefix and extension (terrain/hills_nes, not ./assets/terrain/hills_nes.png). Sizes and offsets are in the pack's native pixels; the renderer multiplies them by the map scale. A {placeholder} in a sprite name is filled from engine names and directions. civ.one also checks what a schema cannot say: that each name's placeholders are ones the map fills, that the grid is one the engine knows, that defaultScale is one of scales, that no sprite is listed twice, that a coast, a colouring and a city have the fields their kind needs, and that sizes which depend on each other agree. And it refuses a pack it cannot draw yet, saying what.",
   "type": "object",
   "properties": {
     "$schema": {
@@ -125,7 +125,7 @@
     },
     "fallback": {
       "title": "Fallback tileset",
-      "description": "The id of the tileset a missing optional sprite may come from, or null.",
+      "description": "The id of the tileset that the sprites this one leaves out come from: those under assets.ui prefixes it does not have (a map pack with no interface art of its own), and missing optional ones. Not its own id. Or null.",
       "type": ["string", "null"],
       "x-message": "fallback must be a tileset id or null."
     },
@@ -184,11 +184,19 @@
       "type": "object",
       "properties": {
         "base": {
-          "description": "The sprites under everything: land and ocean.",
+          "description": "The sprites under everything: land and ocean. land may have {terrain}, for a sprite per terrain rather than one under all land; under then says, for a terrain drawn over another one's base, whose.",
           "type": "object",
           "properties": {
-            "land": { "type": "string", "minLength": 1 },
-            "ocean": { "type": "string", "minLength": 1 }
+            "land": {
+              "description": "The land under every land tile, or each terrain's own with {terrain}.",
+              "type": "string",
+              "minLength": 1
+            },
+            "ocean": { "type": "string", "minLength": 1 },
+            "under": {
+              "description": "By terrain, the terrain whose base is drawn under it, such as Forest: Grassland.",
+              "allOf": [{ "$ref": "#/$defs/words" }]
+            }
           },
           "required": ["land", "ocean"],
           "x-message": "families.base must name the land and ocean sprites."
@@ -198,7 +206,7 @@
           "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
         },
         "coast": {
-          "description": "The coast: quarter-tile corners, each picked by the neighbours touching it. Only a coast cut from one strip can be drawn yet.",
+          "description": "The coast: quarter-tile corners, each picked by the neighbours touching it. Cut from one strip with its neighbours in order (Civ1's), or named quarter sprites: sprite filled with each corner's name as {corner} and one digit per neighbour as {bits}, 1 for land, in that corner's order. One or the other.",
           "type": "object",
           "properties": {
             "method": { "const": "corners" },
@@ -219,26 +227,37 @@
                 }
               },
               "required": ["sprite", "quarter", "cell"],
-              "x-message": "families.coast must have a strip: only a coast cut from one strip can be drawn yet."
+              "x-message": "families.coast.strip must have a sprite, a quarter and a cell."
             },
             "sprite": {
-              "description": "Quarter sprites by name, for packs that slice them (terrain/coast/{corner}-{bits}).",
-              "type": "string",
-              "x-message": "{path} must be a sprite name."
+              "description": "Quarter sprites by name, with {corner} and {bits}: terrain/coast/{corner}-{bits} gives terrain/coast/n-011 for the top quarter with land on the second and third of its neighbours.",
+              "allOf": [{ "$ref": "#/$defs/sprite" }]
             },
             "corners": {
-              "type": "array",
-              "items": { "type": "string" },
-              "x-message": "{path} must list the corners' names."
+              "description": "Each quarter, by the name {corner} is filled with: where its top-left corner goes in the tile, in native px, and the neighbours it is picked by, on the descriptor's grid, in the order {bits} writes them.",
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "at": { "$ref": "#/$defs/point" },
+                  "neighbours": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": { "type": "string" }
+                  }
+                },
+                "required": ["at", "neighbours"]
+              },
+              "x-message": "{path} must give each corner an at, a whole x and y in px, and the neighbours it is picked by."
             },
             "order": {
-              "description": "The order of the neighbours in the bitmask, least significant first: each of a square tile's eight once.",
+              "description": "For a strip: the order of the neighbours in the bitmask, least significant first, each of a square tile's eight once.",
               "type": "array",
               "items": { "type": "string" },
               "x-message": "{path} must list each of a square tile's eight neighbours ({directions}) once, as a coast strip is cut for them."
             }
           },
-          "required": ["method", "strip", "order"],
+          "required": ["method"],
           "x-message": "families.coast must be a corners family."
         },
         "riverMouth": {
@@ -274,7 +293,7 @@
           "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
         },
         "fog": {
-          "description": "The edge of what a player has seen.",
+          "description": "The edge of what a player has seen. Left out, that edge is drawn without one.",
           "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
         },
         "special": {
@@ -296,7 +315,6 @@
         "pollution",
         "road",
         "railroad",
-        "fog",
         "special",
         "hut"
       ],
@@ -314,9 +332,13 @@
           "description": "Drawn over a fortified unit.",
           "allOf": [{ "$ref": "#/$defs/sprite" }]
         },
+        "anchor": {
+          "description": "Where a unit's sprite, and fortified, has its top-left corner, from the tile's: above it for a sprite taller than the tile. 0, 0 when left out; geometry.overhang leaves room for it.",
+          "allOf": [{ "$ref": "#/$defs/point" }]
+        },
         "colouring": { "$ref": "#/$defs/colouring" },
         "stackOffset": {
-          "description": "Where the copy that shows a stack is drawn, from the unit.",
+          "description": "Where the copy that shows a stack is drawn, from the unit. Left out, a stack is shown by its colouring's stack alone.",
           "allOf": [{ "$ref": "#/$defs/point" }]
         },
         "status": {
@@ -337,7 +359,7 @@
           "x-message": "units.status.fontSize must be a whole number of px, 1 or more."
         }
       },
-      "required": ["sprite", "fortified", "colouring", "stackOffset", "status"],
+      "required": ["sprite", "fortified", "colouring", "status"],
       "x-message": "units must be an object."
     },
     "cities": {
@@ -345,25 +367,64 @@
       "type": "object",
       "properties": {
         "mode": {
-          "description": "box: the sprite in a box of the player's first colour, inset px in from the tile, on a box of occupied when the city has units in it. (styles, a sprite per style, size and walls, cannot be drawn yet.)",
-          "const": "box",
-          "x-message": "cities.mode {value} cannot be drawn yet: only box."
+          "description": "box: the sprite in a box of the player's first colour, inset px in from the tile, on a box of occupied when the city has units in it, its colouring swapped for the player's. styles: a sprite per style, size and walls (styles), with the player's flag drawn over it by an overlay colouring.",
+          "enum": ["box", "styles"],
+          "x-message": "cities.mode must be \"box\" or \"styles\", not {value}."
         },
-        "sprite": { "$ref": "#/$defs/sprite" },
-        "colouring": { "$ref": "#/$defs/colouring" },
+        "sprite": {
+          "description": "A city's sprite. A styles city's may have {style}, {size} and {walls}.",
+          "allOf": [{ "$ref": "#/$defs/sprite" }]
+        },
+        "colouring": {
+          "description": "For box cities, any; for styles cities, an overlay: the flag sprite, its keys swapped for the player's colours, at an anchor each city sprite has (flag).",
+          "allOf": [{ "$ref": "#/$defs/colouring" }]
+        },
         "inset": {
-          "description": "How far in from the tile the box is, in native px.",
+          "description": "For box cities: how far in from the tile the box is, in native px.",
           "type": "integer",
           "minimum": 0,
           "x-message": "cities.inset must be a whole number of px, 0 or more."
         },
         "occupied": {
-          "description": "The box's colour when the city has units in it.",
+          "description": "For box cities: the box's colour when the city has units in it.",
           "allOf": [{ "$ref": "#/$defs/colour" }],
           "x-message": "cities.occupied must be a colour."
         },
+        "styles": {
+          "description": "For styles cities: the words {style} can be, the default style and one by civilization (as the engine names it), the city size each {size} bucket starts at, and the {walls} words.",
+          "type": "object",
+          "properties": {
+            "names": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string", "minLength": 1 }
+            },
+            "default": { "type": "string" },
+            "civilizations": { "$ref": "#/$defs/words" },
+            "sizes": {
+              "description": "The city size each bucket starts at, smallest first: a city is in the last bucket whose size it has reached, the first when none.",
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "integer", "minimum": 1 }
+            },
+            "walls": {
+              "type": "object",
+              "properties": {
+                "plain": { "type": "string" },
+                "walled": { "type": "string" }
+              },
+              "required": ["plain", "walled"]
+            }
+          },
+          "required": ["names", "default", "civilizations", "sizes", "walls"],
+          "x-message": "cities.styles must list its style names, a default, a style by civilization, the sizes each bucket starts at, and the plain and walled words."
+        },
+        "anchor": {
+          "description": "Where the city's sprite has its top-left corner, from the tile's, as for units. 0, 0 when left out.",
+          "allOf": [{ "$ref": "#/$defs/point" }]
+        },
         "labels": {
-          "description": "Where a city's size and name go: across at x of the tile (within it), on baselines at those parts of it, and the unhappy citizen in place of the size at disorderIcon native px from its corner (within it).",
+          "description": "Where a city's size and name go: across at x of the tile (within it), on baselines at those parts of it, and the unhappy citizen in place of the size at disorderIcon native px from its corner (within it). A sprite with a place of its own for the size has size.",
           "type": "object",
           "properties": {
             "fontSize": { "$ref": "#/$defs/px" },
@@ -394,6 +455,10 @@
               },
               "required": ["x", "y"],
               "x-message": "cities.labels.disorderIcon must have a whole x and y in px, within the tile."
+            },
+            "size": {
+              "description": "Where the size is written on a sprite that has a place for it, in place of x and sizeBaseline.",
+              "allOf": [{ "$ref": "#/$defs/anchor" }]
             }
           },
           "required": [
@@ -406,14 +471,7 @@
           "x-message": "cities.labels.fontSize must be a whole number of px, 1 or more."
         }
       },
-      "required": [
-        "mode",
-        "sprite",
-        "colouring",
-        "inset",
-        "occupied",
-        "labels"
-      ],
+      "required": ["mode", "sprite", "colouring", "labels"],
       "x-message": "cities must be an object."
     },
     "ui": {
@@ -476,6 +534,14 @@
       },
       "required": ["x", "y"],
       "x-message": "{path} must have a whole x and y in px."
+    },
+    "anchor": {
+      "description": "A whole x and y in native px, or the name of an anchor the pack's sprite metadata gives each sprite, such as shield.",
+      "anyOf": [
+        { "$ref": "#/$defs/point" },
+        { "type": "string", "minLength": 1 }
+      ],
+      "x-message": "{path} must have a whole x and y in px, or name an anchor each sprite has."
     },
     "sprite": {
       "description": "A sprite's name, without the store's prefix and extension.",
@@ -603,12 +669,30 @@
       }
     },
     "colouring": {
-      "description": "How player colours go on: the sprite's keys colours are swapped for the player's, colours saying which of the player's replaces each key, by index (0, 1, … in order when left out). (An overlay in the player's colour cannot be drawn yet.)",
+      "description": "How player colours go on. replaceColours: the sprite's keys colours are swapped for the player's, colours saying which of the player's replaces each key, by index (0, 1, … in order when left out). overlay: sprite is drawn over it with its top-left corner at anchor, its own keys swapped the same way; a unit in a stack has stack.sprite drawn behind that, stack.offset from it.",
       "type": "object",
       "properties": {
         "mode": {
-          "const": "replaceColours",
-          "x-message": "{path} {value} cannot be drawn yet: only replaceColours."
+          "enum": ["replaceColours", "overlay"],
+          "x-message": "{path} must be \"replaceColours\" or \"overlay\", not {value}."
+        },
+        "sprite": {
+          "description": "For an overlay: the sprite drawn over.",
+          "allOf": [{ "$ref": "#/$defs/sprite" }]
+        },
+        "anchor": {
+          "description": "For an overlay: where its top-left corner goes on the sprite.",
+          "allOf": [{ "$ref": "#/$defs/anchor" }]
+        },
+        "stack": {
+          "description": "For an overlay: what is drawn behind it, offset from it, when the unit is one of a stack.",
+          "type": "object",
+          "properties": {
+            "sprite": { "$ref": "#/$defs/sprite" },
+            "offset": { "$ref": "#/$defs/point" }
+          },
+          "required": ["sprite", "offset"],
+          "x-message": "{path} must name a sprite and give its offset, a whole x and y in px."
         },
         "keys": {
           "type": "array",
