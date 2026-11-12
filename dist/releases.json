@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@ae47554","date":"2026-11-12T09:42:29.000Z","localChanges":["chore: the map can draw isometric units and cities with flags and shields in the player's colours, not offered yet (#97) (#990)"],"externalChanges":{}}
+{"version":"0.1.0@fd09a91","date":"2026-11-12T09:53:54.000Z","localChanges":["chore: the city screen can show a city on an isometric map, not offered yet (#97) (#991)"],"externalChanges":{}}
+,
+{"version":"0.1.0@ae475544","date":"2026-11-12T09:42:29.000Z","localChanges":["chore: the map can draw isometric units and cities with flags and shields in the player's colours, not offered yet (#97) (#990)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@fef4a1d4","date":"2026-11-12T09:27:01.000Z","localChanges":["chore: the Import Assets window can also store Civilization II's map sheets, not drawn yet (#97) (#989)"],"externalChanges":{"civ2-asset-extractor":{"status":"added","log":["Cuts terrain, improvements, units and cities out of TERRAIN1.GIF, TERRAIN2.GIF, UNITS.GIF and CITIES.GIF (Multiplayer Gold Edition 1.3), reading anchors from the sheets' marker pixels and player colours from the flags, and names units from RULES.TXT. The library has no Node dependency, so the renderer's import window can use it; cli.js writes PNGs.","Tests run on synthetic sheets; CIV2_PATH runs them against a real copy too. No Civ2 data is in the repository (civ-clone/web-renderer#152).","River mouths are now river-mouth/ne, se, sw and nw rather than 0 to 3. A test against a real copy checks that no other naming fits where each sprite's land lies.","city/flag and city/flag-2 are the first flag of CITIES.GIF's light and dark rows. A renderer swaps that flag's two colours for a player's."]}}}
 ,
