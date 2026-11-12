@@ -1,5 +1,7 @@
 [
-{"version":"0.1.0@b97d8b0","date":"2026-11-12T08:48:07.000Z","localChanges":["refactor: an isometric map projection, minimap and overview, not offered yet (#97) (#986)"],"externalChanges":{}}
+{"version":"0.1.0@8f3f5c5","date":"2026-11-12T09:12:47.000Z","localChanges":["chore: the map can draw isometric terrain, coasts, rivers, roads and improvements, not offered yet (#97) (#988)"],"externalChanges":{}}
+,
+{"version":"0.1.0@b97d8b07","date":"2026-11-12T08:48:07.000Z","localChanges":["refactor: an isometric map projection, minimap and overview, not offered yet (#97) (#986)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@9200fcce","date":"2026-11-12T08:15:01.000Z","localChanges":["refactor: the map scrolls and culls by asking its projection, not by stepping a square tile (#97) (#985)"],"externalChanges":{}}
 ,
