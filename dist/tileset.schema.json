@@ -203,7 +203,15 @@
         },
         "terrain": {
           "description": "Terrain, joined to its neighbours. Its names may have {terrain}.",
-          "allOf": [{ "$ref": "#/$defs/joiningFamily" }]
+          "allOf": [{ "$ref": "#/$defs/joiningFamily" }],
+          "properties": {
+            "features": {
+              "description": "Terrain features drawn as a terrain of their own, over the square's terrain and joined as that terrain would be, such as River where it is a feature on any land rather than a terrain.",
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 },
+              "x-message": "{path} must list terrain feature names."
+            }
+          }
         },
         "coast": {
           "description": "The coast: quarter-tile corners, each picked by the neighbours touching it. Cut from one strip with its neighbours in order (Civ1's), or named quarter sprites: sprite filled with each corner's name as {corner} and one digit per neighbour as {bits}, 1 for land, in that corner's order. One or the other.",
