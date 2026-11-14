@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@72e03bb3","date":"2026-11-14T21:27:06.000Z","localChanges":["docs: what the Civilization II rules don't do yet (#1047)"],"externalChanges":{}}
+,
 {"version":"0.1.0@5bad18bb","date":"2026-11-14T21:21:43.000Z","localChanges":["New Game can now play Civilization II's rules, once you've imported the Civilization II graphics from your own copy: choose Civilization II in New Game or in the game setup, and the game is played on the isometric map with Civilization II's six difficulty levels, the toughest being Deity (#668).","Changing the game in the game setup keeps who plays each seat and the names you typed, and if the game you pick can't be set up, the setup for the one you had comes back, with a message if neither can (#668).","Civilization II is a preview: some of its rules are still missing, and games saved with it may not load in later versions."],"externalChanges":{}}
 ,
 {"version":"0.1.0@9cfc05ac","date":"2026-11-14T20:39:17.000Z","localChanges":["chore: Civilization II's names, rivers and specials, ready for when it can be chosen (not playable yet) (#1048)"],"externalChanges":{}}
