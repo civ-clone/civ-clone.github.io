@@ -422,6 +422,19 @@
                 "walled": { "type": "string" }
               },
               "required": ["plain", "walled"]
+            },
+            "eras": {
+              "description": "The style a city of a later era is drawn in, whatever its civilization's, by the era the engine sends (Civ2's industrial and modern).",
+              "$ref": "#/$defs/words"
+            },
+            "sizesByStyle": {
+              "description": "A style's own size buckets, where they differ from sizes, as many as sizes has.",
+              "type": "object",
+              "additionalProperties": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "integer", "minimum": 1 }
+              }
             }
           },
           "required": ["names", "default", "civilizations", "sizes", "walls"],
@@ -481,6 +494,23 @@
       },
       "required": ["mode", "sprite", "colouring", "labels"],
       "x-message": "cities must be an object."
+    },
+    "people": {
+      "title": "Citizens",
+      "description": "The pack's own citizens for the city screen, for a city whose rules send its citizens' era, in place of the interface tileset's city/people_<mood>_<f|m>. A face that isn't imported is drawn with the interface's.",
+      "type": "object",
+      "properties": {
+        "sprite": {
+          "description": "The face's name, with {era} (ancient, renaissance, industrial, modern) and {face}: <mood>-<male|female> for a worker, entertainer, tax-collector or scientist for a specialist. Each listed in assets, as a rule under optional.",
+          "allOf": [{ "$ref": "#/$defs/sprite" }]
+        },
+        "small": {
+          "description": "The face without an era, with {face} as for sprite, for a pack whose era rows aren't imported.",
+          "allOf": [{ "$ref": "#/$defs/sprite" }]
+        }
+      },
+      "required": ["sprite"],
+      "x-message": "people must name its sprite, with {era} and {face}."
     },
     "yields": {
       "title": "Yield icons on the map",
