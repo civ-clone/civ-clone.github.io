@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://civ.one/dist/tileset.schema.json",
   "title": "civ.one tileset descriptor",
-  "description": "What a tileset says about itself: the grid it is drawn for, its native tile size, the map scales it can be shown at, the sprites it has, how the sprites for each kind of thing are named and put together, and how player colours go onto units and cities. Sprite names leave out the store's prefix and extension (terrain/hills_nes, not ./assets/terrain/hills_nes.png). Sizes and offsets are in the pack's native pixels; the renderer multiplies them by the map scale. A {placeholder} in a sprite name is filled from engine names and directions. civ.one also checks what a schema cannot say: that each name's placeholders are ones the map fills, that the grid is one the engine knows, that defaultScale is one of scales, that no sprite is listed twice, that a coast, a colouring and a city have the fields their kind needs, and that sizes which depend on each other agree. And it refuses a pack it cannot draw yet, saying what.",
+  "description": "What a tileset says about itself: the grid it is drawn for, its native tile size, the map scales it can be shown at, the sprites it has, how the sprites for each kind of thing are named and put together, and how player colours go onto units and cities. Sprite names leave out the store's prefix and extension (terrain/hills_nes, not ./assets/terrain/hills_nes.png). Sizes and offsets are in the pack's native pixels; the renderer multiplies them by the map scale. A {placeholder} in a sprite name is filled from engine names and directions. civ.one also checks what a schema cannot say: that each name's placeholders are ones the map fills, that the grid is one the engine knows, that defaultScale is one of scales, that defaultZoom is a tenth within them, that no sprite is listed twice, that a coast, a colouring and a city have the fields their kind needs, and that sizes which depend on each other agree. And it refuses a pack it cannot draw yet, saying what.",
   "type": "object",
   "properties": {
     "$schema": {
@@ -99,7 +99,7 @@
     },
     "scales": {
       "title": "Map scales",
-      "description": "The map scales it can be shown at.",
+      "description": "The whole map scales it is drawn at: the map zooms from the smallest of them to the largest, in tenths, drawn at the whole scale at or above the zoom.",
       "type": "array",
       "minItems": 1,
       "items": { "type": "integer", "minimum": 1 },
@@ -111,6 +111,13 @@
       "type": "integer",
       "minimum": 1,
       "x-message": "defaultScale {value} is not in scales."
+    },
+    "defaultZoom": {
+      "title": "Starting zoom",
+      "description": "The zoom a player starts on, from the smallest of scales to the largest, in tenths: defaultScale where it is left out. Windows show the art at defaultScale.",
+      "type": "number",
+      "minimum": 1,
+      "x-message": "defaultZoom {value} is not a tenth from the smallest of scales to the largest."
     },
     "storage": {
       "title": "Storage",

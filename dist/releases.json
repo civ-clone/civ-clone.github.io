@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@0c8e97f1","date":"2026-11-17T21:17:23.000Z","localChanges":["feat: the map zooms in tenths, with a slider in Options (#1063) (#1100)"],"externalChanges":{}}
+,
 {"version":"0.1.0@81f6f08d","date":"2026-11-17T21:03:34.000Z","localChanges":["In the Player Research window (F6), advance names no longer run into each other: there's a gap between the columns, the window widens to fit four where it can, and on a narrow screen such as a phone it shows fewer columns (closes #957)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@9f45e2fe","date":"2026-11-17T20:58:29.000Z","localChanges":["docs: a design for the library of art and sound (#1063) (#1097)"],"externalChanges":{}}
