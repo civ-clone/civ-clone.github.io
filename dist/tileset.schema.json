@@ -180,6 +180,12 @@
         "unit": {
           "description": "By unit, such as Settlers.",
           "allOf": [{ "$ref": "#/$defs/words" }]
+        },
+        "ui": {
+          "description": "civ.one's interface names to this tileset's own sprite names, where they differ, such as city/bulb: icons/science. A name left out is the tileset's own too.",
+          "type": "object",
+          "additionalProperties": { "type": "string", "minLength": 1 },
+          "x-message": "names.ui must map the interface's names to sprite names."
         }
       },
       "required": ["terrain", "special", "unit"],
