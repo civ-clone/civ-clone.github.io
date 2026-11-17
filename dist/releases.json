@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@51fce6f3","date":"2026-11-17T16:54:39.000Z","localChanges":["A watched Civilization II game now stops when the game ends, as a Civilization I game does (#606)."],"externalChanges":{}}
+,
 {"version":"0.1.0@78952105","date":"2026-11-17T16:32:09.000Z","localChanges":["refactor: a hexagonal map projection, minimap and overview, not offered yet (#94) (#1092)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@505dcb31","date":"2026-11-17T15:03:09.000Z","localChanges":["chore: update simple-ai-client for the hexagonal grid (#95) (#1094)"],"externalChanges":{"simple-ai-client":{"status":"updated","log":["docs: the Diplomat comment in moveUnit says Envoys sends it where the rules choose its mission (#88)","fix: on the hexagonal grid, computer players found as many cities as on the square grid (#89)"]}}}
