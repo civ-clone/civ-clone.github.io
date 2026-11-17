@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://civ.one/dist/sound.schema.json",
+  "title": "civ.one sound set manifest",
+  "description": "What a set of sound says about itself in the library: the head a tileset descriptor has, and where its files are kept, with no descriptor body.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "description": "This schema, for an editor to check the manifest against."
+    },
+    "schema": {
+      "title": "Manifest format",
+      "description": "The manifest format, 1: any other is refused.",
+      "const": 1,
+      "x-message": "schema {value} cannot be read here, only schema 1."
+    },
+    "kind": {
+      "title": "Kind of set",
+      "const": "sound",
+      "x-message": "kind must be \"sound\", not {value}."
+    },
+    "id": {
+      "title": "Id",
+      "type": "string",
+      "minLength": 1,
+      "x-message": "id must be a non-empty string."
+    },
+    "name": {
+      "title": "Name",
+      "description": "The set's name, as a player sees it.",
+      "type": "string",
+      "minLength": 1,
+      "x-message": "name must be a non-empty string."
+    },
+    "source": {
+      "title": "Source",
+      "description": "Where the set comes from: hosted, built into the site and fetched, or imported, read from the player's own copy of the game it comes from.",
+      "enum": ["hosted", "imported"],
+      "x-message": "source must be \"hosted\" or \"imported\", not {value}."
+    },
+    "licence": {
+      "title": "Licence",
+      "description": "The set's licence, shown on its entry in the library. An imported set has none of ours to show.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "minLength": 1 },
+        "attribution": { "type": "string", "minLength": 1 }
+      },
+      "required": ["name", "url"],
+      "x-message": "licence must have a name and a url, and any attribution must be a non-empty string."
+    },
+    "storage": {
+      "title": "Storage",
+      "description": "Where its files are kept: a file's key in the store is prefix + name + ext, such as ./sources/ASOUND.CVL.",
+      "type": "object",
+      "properties": {
+        "prefix": { "type": "string" },
+        "ext": { "type": "string" }
+      },
+      "required": ["prefix", "ext"],
+      "x-message": "storage must have a prefix and an ext."
+    }
+  },
+  "required": ["schema", "kind", "id", "name", "source", "storage"],
+  "x-message": { "type": "a manifest must be an object." }
+}

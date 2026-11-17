@@ -33,6 +33,15 @@
       "minLength": 1,
       "x-message": "name must be a non-empty string."
     },
+    "source": {
+      "title": "Source",
+      "description": "Where the set comes from, as the library says: hosted, built into the site and fetched, or imported, read from the player's own copy of the game it comes from.",
+      "enum": ["hosted", "imported"],
+      "x-message": "source must be \"hosted\" or \"imported\", not {value}."
+    },
+    "licence": {
+      "$ref": "#/$defs/licence"
+    },
     "grid": {
       "title": "Grid",
       "description": "The grid it is drawn for, as the engine names it: a game on any other grid cannot use it.",
@@ -623,6 +632,18 @@
     "cities"
   ],
   "$defs": {
+    "licence": {
+      "title": "Licence",
+      "description": "The set's licence, shown on its entry in the library: its name, a link to it, and the attribution it asks for (CC BY's). An imported set has none of ours to show.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "minLength": 1 },
+        "attribution": { "type": "string", "minLength": 1 }
+      },
+      "required": ["name", "url"],
+      "x-message": "licence must have a name and a url, and any attribution must be a non-empty string."
+    },
     "px": {
       "description": "A whole number of px, 1 or more.",
       "type": "integer",
