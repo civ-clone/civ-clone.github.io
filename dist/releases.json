@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@88200554","date":"2026-11-18T12:33:51.000Z","localChanges":["On the hexagonal map, and with Civilization II's art, a city with units in it shows a small box in its player's colours, rather than one of its units drawn over it, hiding the city (#1122)."],"externalChanges":{}}
+,
 {"version":"0.1.0@e95e9600","date":"2026-11-18T12:25:36.000Z","localChanges":["A page opened before civ.one is updated can still load its pixel art when it needs it, rather than finding it gone (#1114).","When the pixel art takes too long to load, the message now says whether it was still downloading, being unpacked or being cut up (#1114)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@9e8da38f","date":"2026-11-18T12:20:47.000Z","localChanges":["The classic city screen draws its map at the map's zoom rounded down to a whole size, so at a zoom such as 1.4 it's the size it was at 1, not twice it (closes #1102)."],"externalChanges":{}}
