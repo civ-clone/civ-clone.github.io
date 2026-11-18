@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@3a6decc9","date":"2026-11-18T21:53:10.000Z","localChanges":["docs: a licence survey of free, realistic 3D models and textures for the 3D map (#1188)"],"externalChanges":{}}
+,
 {"version":"0.1.0@ab800c73","date":"2026-11-18T21:32:13.000Z","localChanges":["chore: work towards a 3D map, not offered yet: dragging, gliding, the wheel and pinching are shared, for a 3D map to feel the same (#1187)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@558c6328","date":"2026-11-18T21:10:10.000Z","localChanges":["New games can now be played on the isometric map without importing anything from Civilization II. civ.one's own pixel art draws it, in the same style as its square and hex maps.","If you've imported Civilization II's art, the isometric map is still drawn with it, unless you choose the pixel art for isometric maps in Art and sound. Civilization II games still need Civilization II's art, to play and to load."],"externalChanges":{"civ1-tileset-pixelart":{"status":"updated","log":["feat: an isometric pack in the same style, for civ.one's staggered isometric grid (#8)"]}}}
