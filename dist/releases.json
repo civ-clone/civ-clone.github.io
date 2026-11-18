@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@558c6328","date":"2026-11-18T21:10:10.000Z","localChanges":["New games can now be played on the isometric map without importing anything from Civilization II. civ.one's own pixel art draws it, in the same style as its square and hex maps.","If you've imported Civilization II's art, the isometric map is still drawn with it, unless you choose the pixel art for isometric maps in Art and sound. Civilization II games still need Civilization II's art, to play and to load."],"externalChanges":{"civ1-tileset-pixelart":{"status":"updated","log":["feat: an isometric pack in the same style, for civ.one's staggered isometric grid (#8)"]}}}
+,
 {"version":"0.1.0@21f041c4","date":"2026-11-18T20:47:47.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the map is an empty, lit 3D scene, its code fetched only then (#1190)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@1ef491d6","date":"2026-11-18T20:20:55.000Z","localChanges":["When you move a trade rate after ending your turn, before the game has answered, the Adjust trade rates window now says the new rates are applied only if your turn goes on, as they can wait a while when talks are open (closes #1183)."],"externalChanges":{}}
