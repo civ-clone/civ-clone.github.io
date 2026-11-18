@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@7a25181a","date":"2026-11-18T13:47:46.000Z","localChanges":["Art and sound's sets, headings and statuses now sit in from the window's edges, in line with its title, rather than hard against them."],"externalChanges":{}}
+,
 {"version":"0.1.0@3916b18d","date":"2026-11-18T13:38:46.000Z","localChanges":["New Game now offers a hexagonal map as well as a square one, drawn with civ.one's own pixel art, without anything to import (closes #1122)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@ca27c7bc","date":"2026-11-18T13:04:52.000Z","localChanges":["In a game whose rules draw a grid's maps with their own art, other art's Use for that grid in Art and sound is now out of use and says why, rather than doing nothing (closes #1144).","When a game can't be carried over to a new page for a theme's new art, you're now told it goes on as it was and the new art is drawn from the next time the page loads, rather than that a save couldn't be written (#1144)."],"externalChanges":{}}
