@@ -420,6 +420,17 @@
           "allOf": [{ "$ref": "#/$defs/colour" }],
           "x-message": "cities.occupied must be a colour."
         },
+        "walls": {
+          "description": "Drawn over a walled city, for a pack whose city sprites don't show walls themselves (Civ1 draws the fortified unit's frame over one): the sprite, and where its top-left corner goes from the tile's, in native px, within the tile (0, 0 when left out); what reaches past the tile is cut off. Not for a pack whose city sprite has {walls}.",
+          "type": "object",
+          "properties": {
+            "sprite": { "$ref": "#/$defs/sprite" },
+            "at": { "$ref": "#/$defs/point" }
+          },
+          "required": ["sprite"],
+          "additionalProperties": false,
+          "x-message": "cities.walls must name a sprite, and may say where it goes (at)."
+        },
         "styles": {
           "description": "For styles cities: the words {style} can be, the default style and one by civilization (as the engine names it), the city size each {size} bucket starts at, and the {walls} words.",
           "type": "object",

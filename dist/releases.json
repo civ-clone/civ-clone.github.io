@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@9fe998bb","date":"2026-11-18T15:38:40.000Z","localChanges":["A city with City Walls now shows them on the map, as Civilization draws them, on your rivals' cities as well as your own (closes #688).","In Civilization II games, a city also shows walls while its owner's Great Wall stands, as the Wonder is City Walls in every one of their cities (#1069)."],"externalChanges":{"civ1-tileset-pixelart":{"status":"updated","log":["The descriptors' new `cities.walls` names `map/fortify` for a walled city, as Civ1 draws its fortified unit's frame over a city with City Walls (civ-clone/web-renderer#688). The square pack draws it a pixel in, as Civ1 does, so a garrisoned city's occupied box still shows on its top and left; the renderer cuts off what reaches past the tile. No sprite changes. 0.2.2."]}}}
+,
 {"version":"0.1.0@7a25181a","date":"2026-11-18T13:47:46.000Z","localChanges":["Art and sound's sets, headings and statuses now sit in from the window's edges, in line with its title, rather than hard against them."],"externalChanges":{}}
 ,
 {"version":"0.1.0@3916b18d","date":"2026-11-18T13:38:46.000Z","localChanges":["New Game now offers a hexagonal map as well as a square one, drawn with civ.one's own pixel art, without anything to import (closes #1122)."],"externalChanges":{}}
