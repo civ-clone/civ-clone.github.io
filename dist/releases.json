@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@ad321d67","date":"2026-11-18T12:48:39.000Z","localChanges":["On the hexagonal map, the food, shield and trade icons on a tile now stay inside its hexagon, on the city screen and on the map, rather than spilling on to the tiles around it (#1122)."],"externalChanges":{}}
+,
 {"version":"0.1.0@ad0adeee","date":"2026-11-18T12:38:47.000Z","localChanges":["test: Art and sound's imports are checked right through to the reload (#1106) (#1152)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@88200554","date":"2026-11-18T12:33:51.000Z","localChanges":["On the hexagonal map, and with Civilization II's art, a city with units in it shows a small box in its player's colours, rather than one of its units drawn over it, hiding the city (#1122)."],"externalChanges":{}}
