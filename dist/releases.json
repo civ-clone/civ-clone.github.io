@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@12f6605e","date":"2026-11-18T12:59:44.000Z","localChanges":["When the map art you chose for a grid can't be fetched as a game starts or loads, offline say, the game now starts with other art that's ready for that grid, and tells you why, rather than not starting (closes #1141). Your choice is kept, and the next game tries it again.","A saved game that couldn't be loaded because its map art couldn't be fetched now loads again when you reload the page, rather than having to be chosen again, and you can go back to the menu instead (#1114)."],"externalChanges":{}}
+,
 {"version":"0.1.0@f9d2625c","date":"2026-11-18T12:53:15.000Z","localChanges":["When you change the map's art during a game, the units in windows that are still open, such as the unit stack, the production list and a city's units, are drawn again with the new art at once, rather than when they're next opened (closes #1142)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@ad321d67","date":"2026-11-18T12:48:39.000Z","localChanges":["On the hexagonal map, the food, shield and trade icons on a tile now stay inside its hexagon, on the city screen and on the map, rather than spilling on to the tiles around it (#1122)."],"externalChanges":{}}
