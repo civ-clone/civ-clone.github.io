@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@9fcd0847","date":"2026-11-18T18:03:57.000Z","localChanges":["In Civilization II games, the city screen no longer has its own Happiness panel in the corner. The stages of happiness are in the Happiness report, where Civilization I games show happiness too, and every city's row there opens to them (closes #1166)."],"externalChanges":{}}
+,
 {"version":"0.1.0@2736197d","date":"2026-11-18T17:58:28.000Z","localChanges":["chore: the worker tells the page of each move and battle as it happens, for a map that shows them (#1173)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@48a1e6d1","date":"2026-11-18T16:40:42.000Z","localChanges":["docs: a 3D map's specification and plan of work (#1172)"],"externalChanges":{}}
