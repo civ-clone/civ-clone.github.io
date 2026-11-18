@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@e95e9600","date":"2026-11-18T12:25:36.000Z","localChanges":["A page opened before civ.one is updated can still load its pixel art when it needs it, rather than finding it gone (#1114).","When the pixel art takes too long to load, the message now says whether it was still downloading, being unpacked or being cut up (#1114)."],"externalChanges":{}}
+,
 {"version":"0.1.0@9e8da38f","date":"2026-11-18T12:20:47.000Z","localChanges":["The classic city screen draws its map at the map's zoom rounded down to a whole size, so at a zoom such as 1.4 it's the size it was at 1, not twice it (closes #1102)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@da299c51","date":"2026-11-18T12:15:13.000Z","localChanges":["In Safari, a pinch on the trackpad over the map now zooms the map, not the page (closes #1138).","A flick on a trackpad zooms the map by one whole step at most, rather than running on to its nearest or farthest zoom (for #1139)."],"externalChanges":{}}
