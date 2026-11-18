@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@f9d2625c","date":"2026-11-18T12:53:15.000Z","localChanges":["When you change the map's art during a game, the units in windows that are still open, such as the unit stack, the production list and a city's units, are drawn again with the new art at once, rather than when they're next opened (closes #1142)."],"externalChanges":{}}
+,
 {"version":"0.1.0@ad321d67","date":"2026-11-18T12:48:39.000Z","localChanges":["On the hexagonal map, the food, shield and trade icons on a tile now stay inside its hexagon, on the city screen and on the map, rather than spilling on to the tiles around it (#1122)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@ad0adeee","date":"2026-11-18T12:38:47.000Z","localChanges":["test: Art and sound's imports are checked right through to the reload (#1106) (#1152)"],"externalChanges":{}}
