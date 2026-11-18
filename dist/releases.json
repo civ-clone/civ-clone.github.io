@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@21f041c4","date":"2026-11-18T20:47:47.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the map is an empty, lit 3D scene, its code fetched only then (#1190)"],"externalChanges":{}}
+,
 {"version":"0.1.0@1ef491d6","date":"2026-11-18T20:20:55.000Z","localChanges":["When you move a trade rate after ending your turn, before the game has answered, the Adjust trade rates window now says the new rates are applied only if your turn goes on, as they can wait a while when talks are open (closes #1183)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@4ad8bde8","date":"2026-11-18T19:48:47.000Z","localChanges":["In Civilization II games, the Active Unit panel's order buttons and the unit's action menu show the unit's own Civilization II picture, with its order's letter where it has one, so units the original Civilization doesn't have, such as Archers, have one too. The terrain buttons show Civilization II's terrain, roads and mines, and Found city shows your civilization's own city, as does the notice of a city you've lost (closes #1053)."],"externalChanges":{}}
