@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@992219a7","date":"2026-11-18T22:03:20.000Z","localChanges":["chore: work towards a 3D map, not offered yet: where each square of the square, isometric and hex grids lies on its ground (#1192)"],"externalChanges":{}}
+,
 {"version":"0.1.0@3a6decc9","date":"2026-11-18T21:53:10.000Z","localChanges":["docs: a licence survey of free, realistic 3D models and textures for the 3D map (#1188)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@ab800c73","date":"2026-11-18T21:32:13.000Z","localChanges":["chore: work towards a 3D map, not offered yet: dragging, gliding, the wheel and pinching are shared, for a 3D map to feel the same (#1187)"],"externalChanges":{}}
