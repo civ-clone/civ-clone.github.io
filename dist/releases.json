@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@113290dd","date":"2026-11-19T03:09:43.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 roads, fields, specials, huts and trees are laid on the land, and units face the way they went (#1211)"],"externalChanges":{}}
+,
 {"version":"0.1.0@f7473a29","date":"2026-11-19T01:03:46.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 each unit is drawn as its type looks, with its owner's flag over it (#1210)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@56589c81","date":"2026-11-19T00:11:06.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a game can be played on the 3D map, on every grid (#1205)"],"externalChanges":{}}
