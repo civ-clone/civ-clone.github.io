@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@0e4d0f4f","date":"2026-11-19T08:48:06.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the keys that move a unit turn with the view, so up moves it the way the camera faces (#1217)"],"externalChanges":{}}
+,
 {"version":"0.1.0@cfc49799","date":"2026-11-19T08:21:37.000Z","localChanges":["Computer players no longer count a city that has been destroyed when sizing up a rival, or send an invasion fleet after one (closes #1163)."],"externalChanges":{"simple-ai-client":{"status":"updated","log":["`knownEnemyCities` (the rival's targets) and `invasionTargets` read `cityRegistry.entries()`, which keeps destroyed cities. Both now read `liveCities`, moved from lib/Barbarian/raid to lib/City/liveCities."]}}}
 ,
 {"version":"0.1.0@b1942d73","date":"2026-11-19T08:11:16.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 units are drawn life size, and Options can draw them bigger or smaller (#1216)"],"externalChanges":{}}
