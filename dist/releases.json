@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@2aecca3c","date":"2026-11-19T20:29:39.000Z","localChanges":["When the map is drawn with civ.one's own pixel art, on the square, hexagonal or isometric grid, the rest of the screen now matches it: the yields on the map and in the city screen, the citizens, the top bar's icons, the cursor and the pictures on the order buttons are the pixel art's, rather than Civilization's when you've imported it. Games drawn with Civilization's or Civilization II's art look as they did."],"externalChanges":{}}
+,
 {"version":"0.1.0@a96fcc18","date":"2026-11-19T18:59:50.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 units walk from square to square over the land, a GoTo's steps as one walk (#1238)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@8eb0c4d4","date":"2026-11-19T16:33:36.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the tallest peaks are capped with snow, steep ground is bare rock, and the shore is wet (#1231)"],"externalChanges":{}}
