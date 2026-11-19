@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@f042e345","date":"2026-11-19T07:10:59.000Z","localChanges":["In the Game setup window, opening the rules or Advanced no longer squeezes the seats to two rows that scroll inside the window: every seat is shown below them, and the window scrolls to reach them. However short the screen, at least four seats now stay in view (closes #1091)."],"externalChanges":{}}
+,
 {"version":"0.1.0@479ff454","date":"2026-11-19T04:19:11.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 each unit and each city is drawn in one go, so frames come quicker, and old city labels are let go (#1214)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@a14b3c8f","date":"2026-11-19T04:07:25.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a unit slides from square to square as it moves (closes #1206) (#1213)"],"externalChanges":{}}
