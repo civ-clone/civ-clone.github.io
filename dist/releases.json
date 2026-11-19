@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@56589c81","date":"2026-11-19T00:11:06.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a game can be played on the 3D map, on every grid (#1205)"],"externalChanges":{}}
+,
 {"version":"0.1.0@b7c59f34","date":"2026-11-18T22:34:24.000Z","localChanges":["In a Civilization II game, Earth is now Civilization II's own Earth, in its three sizes, with its rivers, and each civilization starting where the original starts it (closes #1176).","When Civilization II is available, the main menu's Play Earth asks which game's Earth to play, Civilization's or Civilization II's, and Customise offers Civilization II's Earth beside its sizes."],"externalChanges":{"civ2-earth-generator":{"status":"added","log":["chore: start civ2-earth-generator","feat: Civilization II's Earth, from the original's map files (civ-clone/web-renderer#1176) (#1)"]},"civ2-world":{"status":"updated","log":["feat: Civilization II's own Earth (civ-clone/web-renderer#1176) (#7)"]}}}
 ,
 {"version":"0.1.0@8f9baafa","date":"2026-11-18T22:27:50.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the map shows the land, its relief and its terrain, on every grid (#1201)"],"externalChanges":{}}

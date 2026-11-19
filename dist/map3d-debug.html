@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D map debug world</title>
+    <!-- The 3D map's debug page (docs/3d-renderer-plan.md 1.1b): copied to dist/ by the build, beside the scripts. -->
+    <style>
+      html,
+      body {
+        background: #1b1f24;
+        color: #e6e6e6;
+        font: 13px/1.4 system-ui, sans-serif;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #map {
+        inset: 0;
+        position: fixed;
+      }
+
+      #map canvas {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+
+      /* After #map in the page, so it's drawn over the map without a z-index. */
+      form {
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 0.75rem;
+        left: 0.5rem;
+        max-width: calc(100% - 2rem);
+        padding: 0.5rem;
+        position: absolute;
+        top: 0.5rem;
+      }
+
+      label {
+        align-items: center;
+        display: flex;
+        gap: 0.25rem;
+      }
+
+      input {
+        width: 4rem;
+      }
+
+      p {
+        flex-basis: 100%;
+        margin: 0;
+        opacity: 0.8;
+      }
+
+      /* After #map too, at the bottom right, clear of the stats in the bottom left. */
+      #minimap {
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        bottom: 0.5rem;
+        image-rendering: pixelated;
+        position: absolute;
+        right: 0.5rem;
+        width: 12rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"><canvas></canvas></div>
+
+    <form method="get">
+      <label
+        >Grid
+        <select name="grid">
+          <option value="square">Square</option>
+          <option value="staggered-iso">Isometric</option>
+          <option value="hex-odd-r">Hex</option>
+        </select>
+      </label>
+      <label>Width <input name="width" type="number" min="8" max="160" /></label>
+      <label
+        >Height <input name="height" type="number" min="8" max="160"
+      /></label>
+      <label>Seed <input name="seed" type="number" min="0" /></label>
+      <label
+        >Seen <input name="seen" type="number" min="0" max="1" step="any"
+      /></label>
+      <button type="submit">Build</button>
+      <p>
+        The arrow keys move the map; <kbd>[</kbd> and <kbd>]</kbd> turn it, and
+        <kbd>\</kbd> turns it back to north; <kbd>z</kbd> and <kbd>x</kbd> zoom.
+      </p>
+    </form>
+
+    <!-- Versioned by the build, as the game's own scripts are, so a deploy never pairs an old one with a new one. -->
+    <canvas id="minimap"></canvas>
+
+    <script src="map3d.js?v=0.1.0%4056589c81"></script>
+    <script src="map3d-debug.js?v=0.1.0%4056589c81"></script>
+  </body>
+</html>
