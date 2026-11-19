@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@13b27e41","date":"2026-11-19T13:51:59.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 forests, jungles and swamps grow as one wood across their squares, as in Civ1 (#1228)"],"externalChanges":{}}
+,
 {"version":"0.1.0@6496d6c9","date":"2026-11-19T12:21:59.000Z","localChanges":["In a Civilization II game, the city screen's citizens are drawn at Civilization II's own size, no longer squeezed thin and overlapping (closes #1221).","The upkeep a supported unit costs is drawn in the corner of that unit's own picture, so it's clear which unit costs what (closes #1222).","A yield the city spends all of now reads \"4 +0\" rather than \"4 0\", which looked like forty (closes #1223).","On the new city screen, the city's map is shown at the size the map is zoomed to, and the units in the city and those it supports are listed under its yields, without a white square behind them (closes #1224)."],"externalChanges":{}}
 ,
 {"version":"0.1.0@fd7768bd","date":"2026-11-19T12:09:24.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 mountains side by side are joined into ranges, as in Civ1 (#1220)"],"externalChanges":{}}
