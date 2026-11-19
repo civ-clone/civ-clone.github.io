@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@a96fcc18","date":"2026-11-19T18:59:50.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 units walk from square to square over the land, a GoTo's steps as one walk (#1238)"],"externalChanges":{}}
+,
 {"version":"0.1.0@8eb0c4d4","date":"2026-11-19T16:33:36.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the tallest peaks are capped with snow, steep ground is bare rock, and the shore is wet (#1231)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@aced27ba","date":"2026-11-19T15:09:55.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the land's surfaces have detail close up (grass, sand, rock and the rest), made by code (#1230)"],"externalChanges":{}}
