@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@23e54548","date":"2026-11-19T21:11:39.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1, Options has how units move (walk, walk quickly or at once) and whether other players' units are shown moving (#1245)"],"externalChanges":{}}
+,
 {"version":"0.1.0@6d90409c","date":"2026-11-19T20:43:15.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the camera and the ring wait for your unit to finish walking before moving to the next (#1241)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@2aecca3c","date":"2026-11-19T20:29:39.000Z","localChanges":["When the map is drawn with civ.one's own pixel art, on the square, hexagonal or isometric grid, the rest of the screen now matches it: the yields on the map and in the city screen, the citizens, the top bar's icons, the cursor and the pictures on the order buttons are the pixel art's, rather than Civilization's when you've imported it. Games drawn with Civilization's or Civilization II's art look as they did."],"externalChanges":{}}
