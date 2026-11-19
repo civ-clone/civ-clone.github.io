@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@fd7768bd","date":"2026-11-19T12:09:24.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 mountains side by side are joined into ranges, as in Civ1 (#1220)"],"externalChanges":{}}
+,
 {"version":"0.1.0@d88146d0","date":"2026-11-19T09:26:04.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the y key shows what each square yields in the world, over it, shrinking with distance (#1219)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@0e4d0f4f","date":"2026-11-19T08:48:06.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the keys that move a unit turn with the view, so up moves it the way the camera faces (#1217)"],"externalChanges":{}}
