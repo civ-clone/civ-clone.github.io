@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@e191c01b","date":"2026-11-20T23:06:50.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 t hides the towns too, showing the land as it is (#1294)"],"externalChanges":{}}
+,
 {"version":"0.1.0@dc2a90fc","date":"2026-11-20T21:53:05.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a city's houses spill onto the squares round it as it grows, lining the roads into town (#1289)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@e618b844","date":"2026-11-20T20:20:24.000Z","localChanges":["How to play, on the title screen and in the Game menu, explains your first turns: giving units their orders, founding cities, choosing what they build and ending the turn. It also lists the controls for the device you're on: taps and pressing and holding on a touch screen, or clicks, the mouse wheel and every keyboard shortcut with a mouse. You can switch to the other device's, and the keys shown are always the ones the game uses (closes #1270).","A newcomer is offered it once on the title screen."],"externalChanges":{}}
