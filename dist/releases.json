@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@6b53a942","date":"2026-11-20T11:33:29.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 units walk along roads as they wind (#1261)"],"externalChanges":{}}
+,
 {"version":"0.1.0@b07b73e3","date":"2026-11-20T11:00:48.000Z","localChanges":["New Game now opens one window offering Civilization, Civilization II or Customise…, and a game you pick starts straight after the difficulty: on the square grid for Civilization and the isometric grid for Civilization II, at a normal size with 7 civilizations, or however you last started that game. A line under each game says what it will start with (#1247).","Customise… opens the game setup, where you can choose the original rules, the grid, the exact world and the rest."],"externalChanges":{}}
 ,
 {"version":"0.1.0@dd3cd446","date":"2026-11-20T10:05:22.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 roads wind like country lanes, each way out of a square bending its own way (#1260)"],"externalChanges":{}}
