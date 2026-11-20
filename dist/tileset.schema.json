@@ -232,6 +232,24 @@
               "type": "array",
               "items": { "type": "string", "minLength": 1 },
               "x-message": "{path} must list terrain feature names."
+            },
+            "variants": {
+              "description": "Other pictures of a terrain fully joined, so a stretch of it isn't one tile over and over: counts gives how many, by engine name, and sprite names them with {terrain} and {variant}, 1 to the count. A square picks one, or the usual sprite, by a stable hash of its position.",
+              "allOf": [{ "$ref": "#/$defs/terrainPictures" }]
+            },
+            "flavour": {
+              "description": "Small pictures drawn over a terrain fully joined, on about chance (0 to 1) of such squares, one picked by a stable hash of the square's position: counts gives how many, by engine name, and sprite names them with {terrain} and {variant}, 1 to the count.",
+              "allOf": [{ "$ref": "#/$defs/terrainPictures" }],
+              "properties": {
+                "chance": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1,
+                  "x-message": "{path} must be a number from 0 to 1."
+                }
+              },
+              "required": ["chance"],
+              "x-message": "{path} must have a chance, from 0 to 1."
             }
           }
         },
@@ -694,6 +712,19 @@
       "description": "A colour as #rgb, #rrggbb, rgb(…) or rgba(…).",
       "type": "string",
       "pattern": "^(#[0-9a-fA-F]{3}|#[0-9a-fA-F]{6}|[rR][gG][bB][aA]?\\([\\d\\s.,]+\\))$"
+    },
+    "terrainPictures": {
+      "type": "object",
+      "properties": {
+        "sprite": { "$ref": "#/$defs/sprite" },
+        "counts": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 1 },
+          "x-message": "{path} must give, for each terrain by engine name, how many pictures there are: a whole number, 1 or more."
+        }
+      },
+      "required": ["sprite", "counts"],
+      "x-message": "{path} must name its sprite and give the counts by terrain."
     },
     "words": {
       "type": "object",
