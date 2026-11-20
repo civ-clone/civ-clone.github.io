@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@dd3cd446","date":"2026-11-20T10:05:22.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 roads wind like country lanes, each way out of a square bending its own way (#1260)"],"externalChanges":{}}
+,
 {"version":"0.1.0@1fa173a6","date":"2026-11-20T09:41:42.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 ships sit in rings of ripples and leave a wake as they sail (#1259)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@a912c3e1","date":"2026-11-20T08:53:57.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a unit that loses a battle goes up in a puff of smoke (#1258)"],"externalChanges":{}}
