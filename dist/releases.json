@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@fd8e8320","date":"2026-11-21T02:23:54.000Z","localChanges":["New players now get a sentence or two of help as they reach each new moment of their first game: founding the first city, choosing research, a unit built, fortifying, a city in disorder or short of food, and barbarians arriving (closes #1295).","Each tip shows once a game. Tick \"Don't show help again\" on any of them to stop them, or turn them back on with \"Show help as you play\" in Options."],"externalChanges":{}}
+,
 {"version":"0.1.0@e191c01b","date":"2026-11-20T23:06:50.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 t hides the towns too, showing the land as it is (#1294)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@dc2a90fc","date":"2026-11-20T21:53:05.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a city's houses spill onto the squares round it as it grows, lining the roads into town (#1289)"],"externalChanges":{}}
