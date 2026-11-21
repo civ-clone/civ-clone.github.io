@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@7fe3b3ca","date":"2026-11-21T10:39:48.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 each city's banner hangs below its square, as on the 2D map (#1300)"],"externalChanges":{}}
+,
 {"version":"0.1.0@692431c5","date":"2026-11-21T05:44:07.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 t hides and shows the towns at once after the first time (#1299)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@d80f0090","date":"2026-11-21T02:36:34.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 with the towns hidden, the woods keep clear of where a city's unit stands (#1298)"],"externalChanges":{}}
