@@ -1,0 +1,414 @@
+{
+  "schema": 1,
+  "kind": "models",
+  "id": "cimpletoon",
+  "name": "Cimpletoon: later units",
+  "source": "hosted",
+  "licence": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "From Cimpletoon by yd (https://opengameart.org/content/cimpletoon), CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/): posed, reduced, converted and atlased by dom111."
+  },
+  "credits": [
+    {
+      "work": "Cimpletoon",
+      "author": "yd",
+      "url": "https://opengameart.org/content/cimpletoon",
+      "licence": {
+        "name": "CC0 1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "from": "https://opengameart.org/sites/default/files/cimpletoon.zip (c6050ab81527f4b5efb61146097b5f5667634cb3bc93926cbf11002de28feb6b)"
+    }
+  ],
+  "scale": 0.103,
+  "models": {
+    "musketeer": {
+      "file": "cimpletoon.f32c67875649.musketeer.glb",
+      "sha256": "cdd9352c4872ba0e5977e1f9080e9a7a9c45ef6eac7b167780781b4d0a28edde",
+      "extent": {
+        "across": [
+          -0.526,
+          0.526
+        ],
+        "along": [
+          -0.614,
+          0.614
+        ],
+        "height": 1.632
+      },
+      "from": {
+        "blend": "musketeer1.blend",
+        "sha256": "42a8c5553687b5977bbae83ae41249e320ecefb7ec0ba0f56fef6dd96f6126b2"
+      }
+    },
+    "riflemen": {
+      "file": "cimpletoon.f32c67875649.riflemen.glb",
+      "scale": 0.0715,
+      "sha256": "f511c948af2cdf10bd777a1a851202943de54fb78fe99262738bcfa732400253",
+      "extent": {
+        "across": [
+          -0.596,
+          0.596
+        ],
+        "along": [
+          -0.665,
+          0.665
+        ],
+        "height": 2.35
+      },
+      "from": {
+        "blend": "riflemen02.blend",
+        "sha256": "285dbd532e5fb3ae0477b9910f237dce0894cb2dc193eeca1c84c40a3fa2697e"
+      }
+    },
+    "diplomat": {
+      "file": "cimpletoon.f32c67875649.diplomat.glb",
+      "sha256": "c1c7e3b83d12bf3d67b6f55eeaa58dcbd57a479b71bff6524796b1991c792894",
+      "extent": {
+        "across": [
+          -0.381,
+          0.381
+        ],
+        "along": [
+          -0.279,
+          0.279
+        ],
+        "height": 1.697
+      },
+      "from": {
+        "blend": "diplomat7.blend",
+        "sha256": "9b393358438fe8f007755a3a936fcb1e9c1556eb8cec00ab5094a33f53f50927"
+      }
+    },
+    "cavalry": {
+      "file": "cimpletoon.f32c67875649.cavalry.glb",
+      "scale": 0.0675,
+      "sha256": "2311bed8d2d19464fe160f68799bbd3215379197cdc08707a84c749afad22ec6",
+      "extent": {
+        "across": [
+          -0.606,
+          0.606
+        ],
+        "along": [
+          -1.834,
+          1.834
+        ],
+        "height": 3.163
+      },
+      "from": {
+        "blend": "cavalry01.blend",
+        "sha256": "cd186dbc156979f80b7e18e5986357d4599983fbcdc944bbdba53d5d756fe372"
+      }
+    },
+    "cannon": {
+      "file": "cimpletoon.f32c67875649.cannon.glb",
+      "scale": 0.075,
+      "sha256": "9c7204f32ecfc3298baa20e4daa900315139fd846ff88d80b78c93c82caf989a",
+      "extent": {
+        "across": [
+          -0.759,
+          0.759
+        ],
+        "along": [
+          -1.332,
+          1.332
+        ],
+        "height": 1.495
+      },
+      "from": {
+        "blend": "cannon.blend",
+        "sha256": "8b500e044de663b7e775ab72fabf08285f426e190acb470636a7ea6302a24568"
+      }
+    },
+    "artillery": {
+      "file": "cimpletoon.f32c67875649.artillery.glb",
+      "scale": 0.075,
+      "sha256": "f996d8fe3697216d24d1b65e052390604d5bb34497e375d6516768ec36f5175d",
+      "extent": {
+        "across": [
+          -0.863,
+          0.863
+        ],
+        "along": [
+          -1.731,
+          1.731
+        ],
+        "height": 1.402
+      },
+      "from": {
+        "blend": "artillery1.blend",
+        "sha256": "1ae718fc2329c851c701e03f5413a21096b3227c363719953695134d5b12c2c1"
+      }
+    },
+    "mech-inf": {
+      "file": "cimpletoon.f32c67875649.mech-inf.glb",
+      "scale": 0.075,
+      "sha256": "a160c8eeb71cff4588b7a12f25f9404c38c47ce874ebed636f7e76f9c4a03b05",
+      "extent": {
+        "across": [
+          -0.619,
+          0.619
+        ],
+        "along": [
+          -1.442,
+          1.442
+        ],
+        "height": 1.465
+      },
+      "from": {
+        "blend": "mechinf.blend",
+        "sha256": "b4cc66bd706698b78fe1867bbd5f0cd6539fc44d04b0445ecc0cbfc3dcc4b590"
+      }
+    },
+    "armour": {
+      "file": "cimpletoon.f32c67875649.armour.glb",
+      "scale": 0.075,
+      "sha256": "99326810397b8f3084264ab532cbde469da0eee219cd0db77d866d51898b96ab",
+      "extent": {
+        "across": [
+          -0.603,
+          0.603
+        ],
+        "along": [
+          -1.664,
+          1.664
+        ],
+        "height": 1.341
+      },
+      "from": {
+        "blend": "armor.blend",
+        "sha256": "91c0749c3cfee80b4f7446132060224b2ff45787be4e1aa4b309e4a83146431a"
+      }
+    },
+    "fighter": {
+      "file": "cimpletoon.f32c67875649.fighter.glb",
+      "scale": 0.06,
+      "sha256": "608d4dcef07941421d99cf286f6fce97608bc8990151f13bf1c9ea2d4f4e23e5",
+      "extent": {
+        "across": [
+          -1.594,
+          1.594
+        ],
+        "along": [
+          -1.367,
+          1.367
+        ],
+        "height": 0.918
+      },
+      "from": {
+        "blend": "fighter.blend",
+        "sha256": "a6532989f715f80ffbc1f2a3a8183054dc838916abe3751daead4594a5646bdf"
+      }
+    },
+    "bomber": {
+      "file": "cimpletoon.f32c67875649.bomber.glb",
+      "scale": 0.06,
+      "sha256": "e9d5e8a10af382cd300d8fc2f182be292851a29481418c923fb8a420817fea29",
+      "extent": {
+        "across": [
+          -1.965,
+          1.965
+        ],
+        "along": [
+          -1.546,
+          1.546
+        ],
+        "height": 0.826
+      },
+      "from": {
+        "blend": "bomber01.blend",
+        "sha256": "68501e6d6f0a9f3d5dd439fcd2e50a769b753441dc83367d5c70651d61ce4eb8"
+      }
+    },
+    "nuclear": {
+      "file": "cimpletoon.f32c67875649.nuclear.glb",
+      "scale": 0.06,
+      "sha256": "c03d29148a4c7240b06e4f3b38fbceb7f4748d3a4e4ca1edb2b496926c68f645",
+      "extent": {
+        "across": [
+          -0.654,
+          0.654
+        ],
+        "along": [
+          -1.475,
+          1.475
+        ],
+        "height": 1.463
+      },
+      "from": {
+        "blend": "nuclear.blend",
+        "sha256": "7cf271df900b251666c646fdf165b9f5c9e7c602831b6d753e917cb99b46f2d2"
+      }
+    },
+    "frigate": {
+      "file": "cimpletoon.f32c67875649.frigate.glb",
+      "scale": 0.1114,
+      "sha256": "dfee953d70f2fa09d0b7b24313d8c92d58f4f6f474fb3ef74ab492b9aa7842de",
+      "extent": {
+        "across": [
+          -0.521,
+          0.521
+        ],
+        "along": [
+          -1.672,
+          1.672
+        ],
+        "height": 2.326,
+        "draught": 0.317
+      },
+      "from": {
+        "blend": "frigate1.blend",
+        "sha256": "9261467bd4be945b4eca0f441db8777563f9e8f4639a527162eead0c3f7595d1"
+      }
+    },
+    "ironclad": {
+      "file": "cimpletoon.f32c67875649.ironclad.glb",
+      "scale": 0.0856,
+      "sha256": "6f273c743967df10a420df2b97aeb219c9ee048e73198d89448c24267cc83867",
+      "extent": {
+        "across": [
+          -0.379,
+          0.379
+        ],
+        "along": [
+          -1.811,
+          1.811
+        ],
+        "height": 0.731,
+        "draught": 0.206
+      },
+      "from": {
+        "blend": "ironclad02.blend",
+        "sha256": "a3dfc4f794b305468c8a5b93bd951841b334beb1b27314fa151c01a13bcfc99e"
+      }
+    },
+    "transport": {
+      "file": "cimpletoon.f32c67875649.transport.glb",
+      "scale": 0.0896,
+      "sha256": "23b0710b4ae69b26f442d1d55028eeede7df2fdef148cd1eeb43812a57fbfb5b",
+      "extent": {
+        "across": [
+          -0.503,
+          0.503
+        ],
+        "along": [
+          -2.106,
+          2.106
+        ],
+        "height": 1.5,
+        "draught": 0.265
+      },
+      "from": {
+        "blend": "transport.blend",
+        "sha256": "9dfe756b074e93d4d0a38cc86b08b7e509d6c484519b70bd57c25da248470c2a"
+      }
+    },
+    "cruiser": {
+      "file": "cimpletoon.f32c67875649.cruiser.glb",
+      "scale": 0.0896,
+      "sha256": "7ab8b34b8135d5541de2196580085c9f9b3332744eab7d306f758bdfeab7d2e1",
+      "extent": {
+        "across": [
+          -0.429,
+          0.429
+        ],
+        "along": [
+          -2.309,
+          2.309
+        ],
+        "height": 1.257,
+        "draught": 0.355
+      },
+      "from": {
+        "blend": "cruiser01.blend",
+        "sha256": "6e87cd887b6e7653fc22fe3f37d52193043b246180d9c1b11170256410d038b0"
+      }
+    },
+    "battleship": {
+      "file": "cimpletoon.f32c67875649.battleship.glb",
+      "scale": 0.0914,
+      "sha256": "0a03ecf18f27e13c2d1b1429b9bd0f1080238944f0d2419a653984fe44608f53",
+      "extent": {
+        "across": [
+          -0.37,
+          0.37
+        ],
+        "along": [
+          -2.265,
+          2.265
+        ],
+        "height": 1.592,
+        "draught": 0.303
+      },
+      "from": {
+        "blend": "battleship01.blend",
+        "sha256": "0941cef22c7593a56033fdf917266bb164883cd621b1f1f0f50fc5c01499f82c"
+      }
+    },
+    "submarine": {
+      "file": "cimpletoon.f32c67875649.submarine.glb",
+      "scale": 0.0681,
+      "sha256": "47c3460a90ac1fe489edf847b10c86e3e50dbd02588988be4fec962c2f10525b",
+      "extent": {
+        "across": [
+          -0.376,
+          0.376
+        ],
+        "along": [
+          -2.202,
+          2.202
+        ],
+        "height": 0.974,
+        "draught": 0.417
+      },
+      "from": {
+        "blend": "submarine.blend",
+        "sha256": "e02aa874eeecde902fb97a4c08228cf3d01fb50be624d42f795b7400d7c706b0"
+      }
+    },
+    "carrier": {
+      "file": "cimpletoon.f32c67875649.carrier.glb",
+      "scale": 0.1036,
+      "sha256": "f7246de169b28abb027c8ee2d21e10a6ee43434bb72e02e6a20a10a7239fc5ea",
+      "extent": {
+        "across": [
+          -0.654,
+          0.654
+        ],
+        "along": [
+          -2.171,
+          2.171
+        ],
+        "height": 0.984,
+        "draught": 0.246
+      },
+      "from": {
+        "blend": "carrier01.blend",
+        "sha256": "8c03e1e55a23619d0669b15575624de9e0661add0b66cfaf2d76ec2e4bf57a48"
+      }
+    }
+  },
+  "names": {
+    "unit": {
+      "Musketman": "musketeer",
+      "Rifleman": "riflemen",
+      "Diplomat": "diplomat",
+      "Cavalry": "cavalry",
+      "Cannon": "cannon",
+      "Artillery": "artillery",
+      "MechanizedInfantry": "mech-inf",
+      "Tank": "armour",
+      "Fighter": "fighter",
+      "Bomber": "bomber",
+      "Nuclear": "nuclear",
+      "Frigate": "frigate",
+      "Ironclad": "ironclad",
+      "Transport": "transport",
+      "Cruiser": "cruiser",
+      "Battleship": "battleship",
+      "Submarine": "submarine",
+      "Carrier": "carrier"
+    }
+  }
+}
