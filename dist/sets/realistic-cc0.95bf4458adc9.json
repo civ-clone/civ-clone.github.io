@@ -59,7 +59,7 @@
   "scale": 0.093333,
   "models": {
     "settlers": {
-      "file": "realistic-cc0.a27e789144ee.settlers.glb",
+      "file": "realistic-cc0.95bf4458adc9.settlers.glb",
       "sha256": "e302e2c1bf593d1f15cac3955c2079dea0b715a8aba8512e785407385831f32a",
       "extent": {
         "across": [
@@ -79,7 +79,7 @@
       "made": "generated; rewrapped; the owner's colour on the cart's load"
     },
     "warrior": {
-      "file": "realistic-cc0.a27e789144ee.warrior.glb",
+      "file": "realistic-cc0.95bf4458adc9.warrior.glb",
       "sha256": "73ebdd04c6e7780f96a79a0abfde2270cca48d35ff7f8e3c1c63514e49b35d27",
       "extent": {
         "across": [
@@ -99,7 +99,7 @@
       "made": "generated; rewrapped; the owner's colour on the cloak"
     },
     "knight": {
-      "file": "realistic-cc0.a27e789144ee.knight.glb",
+      "file": "realistic-cc0.95bf4458adc9.knight.glb",
       "scale": 0.0875,
       "sha256": "d5f99b1565875213fab47212325102c092968e707446af3ec9c28aeea07b7949",
       "extent": {
@@ -120,12 +120,12 @@
       "made": "generated; rewrapped; the owner's colour on the caparison"
     },
     "explorer": {
-      "file": "realistic-cc0.a27e789144ee.explorer.glb",
-      "sha256": "c97e2efbfa48c244a13462227217f3d1f62cbe289cbe8bf6a1c2e704c444feba",
+      "file": "realistic-cc0.95bf4458adc9.explorer.glb",
+      "sha256": "2ef2815268eee07c141f36fd96b366ea0df836b0d8cfa7af2be314acba8dcd61",
       "extent": {
         "across": [
-          -0.528,
-          0.528
+          -0.395,
+          0.395
         ],
         "along": [
           -0.228,
@@ -137,10 +137,10 @@
       "from": [
         "https://github.com/civ-clone/models-realistic-cc0"
       ],
-      "made": "generated; rewrapped; the owner's colour on the jacket"
+      "made": "generated; rewrapped; the owner's colour on the jacket; posed, his arms at his sides"
     },
     "sail": {
-      "file": "realistic-cc0.a27e789144ee.sail.glb",
+      "file": "realistic-cc0.95bf4458adc9.sail.glb",
       "scale": 0.013636,
       "sha256": "aa81c2f273f580d0e60b0278c5a3785d94f88471e67acb2542d9a046a800c750",
       "extent": {
@@ -162,12 +162,12 @@
       "made": "generated; sails thickened, rewrapped; the owner's colour on the sails"
     },
     "rifleman": {
-      "file": "realistic-cc0.a27e789144ee.rifleman.glb",
-      "sha256": "cb3f347c7f6174466839c3ab81bd644a8c1fa70c63b98c13939180b7251df3b9",
+      "file": "realistic-cc0.95bf4458adc9.rifleman.glb",
+      "sha256": "9488b216f424bfd7f88d7bca23fccc7c9bffa851170919cee2cb7c182c7fb8e7",
       "extent": {
         "across": [
-          -0.561,
-          0.561
+          -0.394,
+          0.394
         ],
         "along": [
           -0.216,
@@ -179,10 +179,10 @@
       "from": [
         "https://github.com/civ-clone/models-realistic-cc0"
       ],
-      "made": "generated; simplified; the owner's colour on the tunic"
+      "made": "generated; simplified; the owner's colour on the tunic; posed, his arms at his sides"
     },
     "cavalry": {
-      "file": "realistic-cc0.a27e789144ee.cavalry.glb",
+      "file": "realistic-cc0.95bf4458adc9.cavalry.glb",
       "scale": 0.090284,
       "sha256": "1b06cf6fe71da20a3a6b0aa1920d4588d1070be7fd2ded12b9154efb1c2b7bb9",
       "extent": {
@@ -203,7 +203,7 @@
       "made": "generated; rewrapped; the owner's colour on the uniform and saddle cloth"
     },
     "alpine-trooper": {
-      "file": "realistic-cc0.a27e789144ee.alpine-trooper.glb",
+      "file": "realistic-cc0.95bf4458adc9.alpine-trooper.glb",
       "sha256": "95734619e20e2bffce86fefc66fbb0bdc9c8fa01d5ad2323118c47a8ccae77f3",
       "extent": {
         "across": [
@@ -223,12 +223,12 @@
       "made": "generated; simplified; the owner's colour on the jacket"
     },
     "partisan": {
-      "file": "realistic-cc0.a27e789144ee.partisan.glb",
-      "sha256": "6076779ffd4976f30d49c1b8a89a3ec98e1092befd86eabbb6be11e28bbf8b4d",
+      "file": "realistic-cc0.95bf4458adc9.partisan.glb",
+      "sha256": "0a9aa0efd230733c67b0b708c44879eb5a6411815ac0be4ddc488a664545b4c6",
       "extent": {
         "across": [
-          -0.492,
-          0.492
+          -0.409,
+          0.409
         ],
         "along": [
           -0.187,
@@ -241,15 +241,33 @@
         "https://github.com/civ-clone/models-realistic-cc0",
         "https://opengameart.org/content/lowpoly-molotov"
       ],
-      "made": "generated figure, simplified; the molotov put in his right hand; the owner's colour on the hoodie"
+      "made": "generated figure, simplified; the molotov put in his right hand; the owner's colour on the hoodie; posed, his arms at his sides and the molotov held low",
+      "rigged": {
+        "file": "realistic-cc0.95bf4458adc9.partisan.rigged.glb",
+        "sha256": "542cd309f560bfa7777e7a9ff4e60ec89ca6d7beac3d39badb18c3cf25fe9ef4",
+        "clips": {
+          "idle": "idle",
+          "move": "move",
+          "fight": "fight",
+          "die": "die"
+        },
+        "shots": {
+          "fight": [
+            {
+              "at": 0.5,
+              "joint": "prop"
+            }
+          ]
+        }
+      }
     },
     "spy": {
-      "file": "realistic-cc0.a27e789144ee.spy.glb",
-      "sha256": "326aaffec9425f55482b6e231795a822fed04a6efda9558a7c4b9ab41dbefb82",
+      "file": "realistic-cc0.95bf4458adc9.spy.glb",
+      "sha256": "57dfe832fe74bb0afc12dbc44b2525198a6851553f2bfa3efd83d9d967d9bec5",
       "extent": {
         "across": [
-          -0.541,
-          0.541
+          -0.376,
+          0.376
         ],
         "along": [
           -0.186,
@@ -261,10 +279,10 @@
       "from": [
         "https://github.com/civ-clone/models-realistic-cc0"
       ],
-      "made": "generated; rewrapped; the owner's colour on the coat"
+      "made": "generated; rewrapped; the owner's colour on the coat; posed, her arms at her sides"
     },
     "bomber": {
-      "file": "realistic-cc0.a27e789144ee.bomber.glb",
+      "file": "realistic-cc0.95bf4458adc9.bomber.glb",
       "scale": 0.008095,
       "sha256": "fd6fcf56fb5199981864eca508d0bcb8ed727812bfeff1f8c6b6791c37d80fe4",
       "extent": {
@@ -285,7 +303,7 @@
       "made": "generated; simplified; the owner's colour on the wingtips"
     },
     "ironclad": {
-      "file": "realistic-cc0.a27e789144ee.ironclad.glb",
+      "file": "realistic-cc0.95bf4458adc9.ironclad.glb",
       "scale": 0.005167,
       "sha256": "ffc35a9d4627c3694000ba6d07fa5a13b7b1c77118a5b5071f3e4431691835d0",
       "extent": {
@@ -307,7 +325,7 @@
       "made": "generated; rewrapped; the owner's colour on a band along the hull"
     },
     "crusader": {
-      "file": "realistic-cc0.a27e789144ee.crusader.glb",
+      "file": "realistic-cc0.95bf4458adc9.crusader.glb",
       "scale": 0.087866,
       "sha256": "2a7ceb12ae4e710812391e713ed7c6bd4c037a066ff0c0eab968e6eb36813717",
       "extent": {
@@ -328,7 +346,7 @@
       "made": "generated; rewrapped; the owner's colour on the surcoat, caparison and shield"
     },
     "musketman": {
-      "file": "realistic-cc0.a27e789144ee.musketman.glb",
+      "file": "realistic-cc0.95bf4458adc9.musketman.glb",
       "sha256": "e8b6487c7f78b3caafd72c5c408268e1d498fec99169442b73893235763f8471",
       "extent": {
         "across": [
@@ -348,7 +366,7 @@
       "made": "simplified; the owner's colour on the coat"
     },
     "dragoon": {
-      "file": "realistic-cc0.a27e789144ee.dragoon.glb",
+      "file": "realistic-cc0.95bf4458adc9.dragoon.glb",
       "scale": 0.088,
       "sha256": "89bca40e4ae2c0b1ef49fe97afea4457755a9cbc60f55164a021f99487a13684",
       "extent": {
@@ -369,7 +387,7 @@
       "made": "simplified; the owner's colour on the coat"
     },
     "frigate": {
-      "file": "realistic-cc0.a27e789144ee.frigate.glb",
+      "file": "realistic-cc0.95bf4458adc9.frigate.glb",
       "scale": 0.007778,
       "sha256": "cd44a195c2748acdd698e533a51658cd333c40d577ab2097773604e472d94374",
       "extent": {
@@ -391,16 +409,16 @@
       "made": "simplified; the owner's colour on the sails"
     },
     "marine": {
-      "file": "realistic-cc0.a27e789144ee.marine.glb",
-      "sha256": "77e5317a792d87178e2c2cffbc02167a11d389d92d1bd8b03952d1686de7e8f1",
+      "file": "realistic-cc0.95bf4458adc9.marine.glb",
+      "sha256": "d3bfc1cf8cf20ee7ec86ce7a2ae6ee6d7627c23f3d08f96b0beacd8c5fc12498",
       "extent": {
         "across": [
-          -0.501,
-          0.501
+          -0.381,
+          0.381
         ],
         "along": [
-          -0.241,
-          0.241
+          -0.237,
+          0.237
         ],
         "height": 1.8
       },
@@ -408,10 +426,10 @@
       "from": [
         "https://github.com/civ-clone/models-realistic-cc0"
       ],
-      "made": "generated; rewrapped; the owner's colour on the shirt"
+      "made": "generated; rewrapped; the owner's colour on the shirt; posed, his arms at his sides"
     },
     "engineer": {
-      "file": "realistic-cc0.a27e789144ee.engineer.glb",
+      "file": "realistic-cc0.95bf4458adc9.engineer.glb",
       "sha256": "0f7cc703b3fe3b727f5c5477eeca1105b94ab109f27b42e23e341109bfed407a",
       "extent": {
         "across": [
@@ -431,7 +449,7 @@
       "made": "generated; rewrapped; the owner's colour on the vest"
     },
     "stealth-bomber": {
-      "file": "realistic-cc0.a27e789144ee.stealth-bomber.glb",
+      "file": "realistic-cc0.95bf4458adc9.stealth-bomber.glb",
       "scale": 0.004743,
       "sha256": "e95ef3fff76ec76ce6bf196ce01fe0a92a93de55769b8b32b7c7539791fb7658",
       "extent": {
@@ -452,7 +470,7 @@
       "made": "generated; simplified; the owner's colour on the wingtips"
     },
     "transport": {
-      "file": "realistic-cc0.a27e789144ee.transport.glb",
+      "file": "realistic-cc0.95bf4458adc9.transport.glb",
       "scale": 0.002815,
       "sha256": "5855c8355385cfabace142dc7dc70d9ace6f167851b20372a2a8a02f945eec55",
       "extent": {
