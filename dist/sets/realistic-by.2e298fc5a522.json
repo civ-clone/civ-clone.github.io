@@ -1,0 +1,714 @@
+{
+  "schema": 1,
+  "kind": "models",
+  "id": "realistic-by",
+  "name": "Realistic: CC BY",
+  "source": "hosted",
+  "licence": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Models by the authors listed at https://github.com/civ-clone/models-realistic-by/blob/main/CREDITS.md, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/): reduced, rebaked, assembled, given their owner's colour and converted by dom111."
+  },
+  "credits": [
+    {
+      "work": "Business Man - Low Polygon game character",
+      "author": "manoeldarochadeoliveira",
+      "url": "https://sketchfab.com/3d-models/business-man-low-polygon-game-character-b6f6740f883b4749abac47af0045a9dd",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Top Hat | FREE Download",
+      "author": "Robin Butler",
+      "url": "https://sketchfab.com/3d-models/top-hat-free-download-4fdf3ad3c88d4bb58ea7aabb9bfcffae",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Models generated for civ.one",
+      "author": "dom111",
+      "url": "https://github.com/civ-clone/models-realistic-by",
+      "licence": {
+        "name": "CC0 1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "work": "Army Parachute",
+      "author": "amaraklov",
+      "url": "https://sketchfab.com/3d-models/army-parachute-af52e08feebc4d94a244692212ac25bb",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "mendicant monk (low poly)",
+      "author": "Götz von Berlichingen",
+      "url": "https://sketchfab.com/3d-models/mendicant-monk-low-poly-36e72d20f4354cdc8de26c4aa8ef00bb",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Lit Torch [Free Download]",
+      "author": "scrampunk",
+      "url": "https://sketchfab.com/3d-models/lit-torch-free-download-3abbd8a21c1d402495c49b94e6c6a37c",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "BTR 80",
+      "author": "Brout",
+      "url": "https://sketchfab.com/3d-models/btr-80-004c8509eb1e4aad8093eba9b4707e79",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Canon de Gribeauval",
+      "author": "Lucas Garnier",
+      "url": "https://sketchfab.com/3d-models/canon-de-gribeauval-3cb4f25c33e24f61876c9bbea3eb5933",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "WW1 Artillery",
+      "author": "Lukas Bobor",
+      "url": "https://sketchfab.com/3d-models/ww1-artillery-4ee955fda8db4a2ea9e6a5fe7beded21",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "howitzer 2a65 msta",
+      "author": "fabertibler",
+      "url": "https://sketchfab.com/3d-models/howitzer-2a65-msta-6bd63aac4fc241d0bdacc5e4639ffd0d",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "M4 Sherman",
+      "author": "snegi5566",
+      "url": "https://sketchfab.com/3d-models/m4-sherman-06df0fdccda04b97ada8c541508e6fd8",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Ural 4320",
+      "author": "Brout",
+      "url": "https://sketchfab.com/3d-models/ural-4320-f953c51a5dbc4a15949f4dcc0905c4e8",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Strategic nuclear missile R-36M (SS-18 Satan)",
+      "author": "Bogdan Kuznetsov",
+      "url": "https://sketchfab.com/3d-models/strategic-nuclear-missile-r-36m-ss-18-satan-de83c0d0a16144efa499b44975740d58",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "V-1 Flying Bomb",
+      "author": "Pippa",
+      "url": "https://sketchfab.com/3d-models/v-1-flying-bomb-9b3a58f498784ebfb01612d4a35609a0",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "F6F Hellcat",
+      "author": "snrnsrk5",
+      "url": "https://sketchfab.com/3d-models/f6f-hellcat-5b0151482fa745d5ade945be7963262e",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Mi-24 Hind",
+      "author": "Duane's Mind",
+      "url": "https://sketchfab.com/3d-models/mi-24-hind-004d68143e1a4df88e136dbc0a05f181",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Lockheed F-117 - Nighthawk",
+      "author": "karelkiers",
+      "url": "https://sketchfab.com/3d-models/lockheed-f-117-nighthawk-d2c544381f8444ad8628cd3bb0665e29",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Simple Galleon",
+      "author": "Lee Johansson",
+      "url": "https://sketchfab.com/3d-models/simple-galleon-1623189576754058b64d0a026f662b9e",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Samidare destroyer",
+      "author": "everlasting17th",
+      "url": "https://sketchfab.com/3d-models/samidare-destroyer-b37939147c854e61857f5b248f9efd29",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Graf Spee (low poly)",
+      "author": "Götz von Berlichingen",
+      "url": "https://sketchfab.com/3d-models/graf-spee-low-poly-0e4575cd053c490491e8eda7ced005e5",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "1:1 Low poly US NAVY DDG-51 USS Arleigh Burke.",
+      "author": "Yi Tsung Lee",
+      "url": "https://sketchfab.com/3d-models/11-low-poly-us-navy-ddg-51-uss-arleigh-burke-17be09c31c6047e4a5969b68c29eba03",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Bismark battleship",
+      "author": "everlasting17th",
+      "url": "https://sketchfab.com/3d-models/bismark-battleship-dfc8b1756ce3419287a9e43a9b9dd21c",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "KoreaNavy -Jang bogo- Class(Type209) Submarine",
+      "author": "Artech",
+      "url": "https://sketchfab.com/3d-models/koreanavy-jang-bogo-classtype209-submarine-abd6a2cd5fe14f6baa16e64c2d20f317",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "work": "Gerald Ford Aircraft Carrier",
+      "author": "Usman Zia",
+      "url": "https://sketchfab.com/3d-models/gerald-ford-aircraft-carrier-324120997379466caad30917911bcd8b",
+      "licence": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    }
+  ],
+  "scale": 0.093333,
+  "models": {
+    "diplomat": {
+      "file": "realistic-by.2e298fc5a522.diplomat.glb",
+      "sha256": "d93da9f6fa8937bbffa72a96ed7f7001aa41f227671ef91440abd1941d4653fc",
+      "extent": {
+        "across": [
+          -0.307,
+          0.307
+        ],
+        "along": [
+          -0.199,
+          0.199
+        ],
+        "height": 1.911
+      },
+      "triangles": 1996,
+      "from": [
+        "https://sketchfab.com/3d-models/business-man-low-polygon-game-character-b6f6740f883b4749abac47af0045a9dd",
+        "https://sketchfab.com/3d-models/top-hat-free-download-4fdf3ad3c88d4bb58ea7aabb9bfcffae"
+      ],
+      "made": "simplified; frozen in the first frame of its idle; the top hat put on his head; the owner's colour on the jacket and tie"
+    },
+    "paratrooper": {
+      "file": "realistic-by.2e298fc5a522.paratrooper.glb",
+      "scale": 0.045,
+      "sha256": "7a6703db89581c8bc92bbc9e32ef2afe466e995f1c1d9442dfaea4f70a094349",
+      "extent": {
+        "across": [
+          -1.6,
+          1.6
+        ],
+        "along": [
+          -1.567,
+          1.567
+        ],
+        "height": 5.859
+      },
+      "triangles": 2499,
+      "from": [
+        "https://github.com/civ-clone/models-realistic-by",
+        "https://sketchfab.com/3d-models/army-parachute-af52e08feebc4d94a244692212ac25bb"
+      ],
+      "made": "generated soldier, rewrapped; the parachute, simplified, over him; the owner's colour on the parachute"
+    },
+    "fanatic": {
+      "file": "realistic-by.2e298fc5a522.fanatic.glb",
+      "sha256": "a9e2767ee119a8842abf0446f1b0ae7163507fcd8ebdca3c6d38cb24456e85dc",
+      "extent": {
+        "across": [
+          -0.671,
+          0.671
+        ],
+        "along": [
+          -0.221,
+          0.221
+        ],
+        "height": 1.8
+      },
+      "triangles": 1999,
+      "from": [
+        "https://sketchfab.com/3d-models/mendicant-monk-low-poly-36e72d20f4354cdc8de26c4aa8ef00bb",
+        "https://sketchfab.com/3d-models/lit-torch-free-download-3abbd8a21c1d402495c49b94e6c6a37c"
+      ],
+      "made": "simplified; the torch, simplified, put in his right hand; the owner's colour on the robe"
+    },
+    "mech-inf": {
+      "file": "realistic-by.2e298fc5a522.mech-inf.glb",
+      "scale": 0.02987,
+      "sha256": "a9783b822da50411a623d697e11c9467a0f6c08dcbf469b87c1fffdef2732fbe",
+      "extent": {
+        "across": [
+          -1.478,
+          1.478
+        ],
+        "along": [
+          -3.85,
+          3.85
+        ],
+        "height": 2.369
+      },
+      "triangles": 2996,
+      "from": [
+        "https://sketchfab.com/3d-models/btr-80-004c8509eb1e4aad8093eba9b4707e79"
+      ],
+      "made": "simplified; the owner's colour on the hull"
+    },
+    "cannon": {
+      "file": "realistic-by.2e298fc5a522.cannon.glb",
+      "scale": 0.04,
+      "sha256": "d3c8ad1aa61e6368a4d75e906cb29350adfcd33e6b90367c9b37b77137409d65",
+      "extent": {
+        "across": [
+          -1.383,
+          1.383
+        ],
+        "along": [
+          -2.5,
+          2.5
+        ],
+        "height": 1.949
+      },
+      "triangles": 3000,
+      "from": [
+        "https://sketchfab.com/3d-models/canon-de-gribeauval-3cb4f25c33e24f61876c9bbea3eb5933"
+      ],
+      "made": "simplified; the owner's colour on the carriage and wheels"
+    },
+    "artillery": {
+      "file": "realistic-by.2e298fc5a522.artillery.glb",
+      "scale": 0.04,
+      "sha256": "1a68d362f322ffc57dd603fd374a05f4fd0f2fa7397c3dae60440487646e00f4",
+      "extent": {
+        "across": [
+          -1.012,
+          1.012
+        ],
+        "along": [
+          -3,
+          3
+        ],
+        "height": 2.026
+      },
+      "triangles": 3000,
+      "from": [
+        "https://sketchfab.com/3d-models/ww1-artillery-4ee955fda8db4a2ea9e6a5fe7beded21"
+      ],
+      "made": "the second gun in the file left out; simplified; the owner's colour on the gun's paint"
+    },
+    "howitzer": {
+      "file": "realistic-by.2e298fc5a522.howitzer.glb",
+      "scale": 0.0225,
+      "sha256": "53b38db5c63f2978db8f6199ca93f034ab68340baf02a358058a9f5eebae0709",
+      "extent": {
+        "across": [
+          -0.964,
+          0.964
+        ],
+        "along": [
+          -6,
+          6
+        ],
+        "height": 1.796
+      },
+      "triangles": 2987,
+      "from": [
+        "https://sketchfab.com/3d-models/howitzer-2a65-msta-6bd63aac4fc241d0bdacc5e4639ffd0d"
+      ],
+      "made": "simplified; the owner's colour on the gun's paint"
+    },
+    "tank": {
+      "file": "realistic-by.2e298fc5a522.tank.glb",
+      "scale": 0.038983,
+      "sha256": "5536cffaedaded62980215cf02fb951c36cfc9e42b1e0117d9ca53150ff3c3e0",
+      "extent": {
+        "across": [
+          -1.524,
+          1.524
+        ],
+        "along": [
+          -2.95,
+          2.95
+        ],
+        "height": 4.716
+      },
+      "triangles": 2966,
+      "from": [
+        "https://sketchfab.com/3d-models/m4-sherman-06df0fdccda04b97ada8c541508e6fd8"
+      ],
+      "made": "rebaked; the owner's colour on the upper hull and turret"
+    },
+    "freight": {
+      "file": "realistic-by.2e298fc5a522.freight.glb",
+      "scale": 0.031081,
+      "sha256": "903eaa6142a3f4acbdee77c5e5be6c76898b151a566cd257fb06bdbdda39920b",
+      "extent": {
+        "across": [
+          -1.496,
+          1.496
+        ],
+        "along": [
+          -3.7,
+          3.7
+        ],
+        "height": 3.199
+      },
+      "triangles": 3000,
+      "from": [
+        "https://sketchfab.com/3d-models/ural-4320-f953c51a5dbc4a15949f4dcc0905c4e8"
+      ],
+      "made": "simplified; the owner's colour on the canvas cover"
+    },
+    "nuclear": {
+      "file": "realistic-by.2e298fc5a522.nuclear.glb",
+      "scale": 0.006471,
+      "sha256": "559c6172fae3d5ec8f88f2c5ad9d9a28f838d96d03efeb16f1af2e9c9dd3467c",
+      "extent": {
+        "across": [
+          -2.123,
+          2.123
+        ],
+        "along": [
+          -1.837,
+          1.837
+        ],
+        "height": 34
+      },
+      "triangles": 2456,
+      "from": [
+        "https://sketchfab.com/3d-models/strategic-nuclear-missile-r-36m-ss-18-satan-de83c0d0a16144efa499b44975740d58"
+      ],
+      "made": "simplified; stands upright; the owner's colour on the green bands"
+    },
+    "cruise-missile": {
+      "file": "realistic-by.2e298fc5a522.cruise-missile.glb",
+      "scale": 0.019277,
+      "sha256": "e0e97112f87c48c148b3c39d63babc41de1b86c4f663a67944895ea18d468856",
+      "extent": {
+        "across": [
+          -3.636,
+          3.636
+        ],
+        "along": [
+          -4.15,
+          4.15
+        ],
+        "height": 1.541
+      },
+      "triangles": 2500,
+      "from": [
+        "https://sketchfab.com/3d-models/v-1-flying-bomb-9b3a58f498784ebfb01612d4a35609a0"
+      ],
+      "made": "simplified; the owner's colour on the wings"
+    },
+    "fighter": {
+      "file": "realistic-by.2e298fc5a522.fighter.glb",
+      "scale": 0.016176,
+      "sha256": "20958987bdb41e0e06569e4778984adce352bf338d271e50e657e79920fc7be0",
+      "extent": {
+        "across": [
+          -6.611,
+          6.611
+        ],
+        "along": [
+          -5.1,
+          5.1
+        ],
+        "height": 3.562
+      },
+      "triangles": 2068,
+      "from": [
+        "https://sketchfab.com/3d-models/f6f-hellcat-5b0151482fa745d5ade945be7963262e"
+      ],
+      "made": "its markings left out; rebaked; propeller animation kept; the owner's colour on the wingtips",
+      "animations": [
+        "Action",
+        "���������������.002Action.001"
+      ]
+    },
+    "helicopter": {
+      "file": "realistic-by.2e298fc5a522.helicopter.glb",
+      "scale": 0.011429,
+      "sha256": "7cd569af348025c28aecd507a63ce853b9dd04e3d56be45b07f87f59a87355c9",
+      "extent": {
+        "across": [
+          -7.172,
+          7.172
+        ],
+        "along": [
+          -8.75,
+          8.75
+        ],
+        "height": 5.392
+      },
+      "triangles": 2493,
+      "from": [
+        "https://sketchfab.com/3d-models/mi-24-hind-004d68143e1a4df88e136dbc0a05f181"
+      ],
+      "made": "simplified; rotor and wheel animation kept; the owner's colour on the tail boom",
+      "animations": [
+        "Wheels and Rotor"
+      ]
+    },
+    "stealth-fighter": {
+      "file": "realistic-by.2e298fc5a522.stealth-fighter.glb",
+      "scale": 0.0085,
+      "sha256": "e170cecf0d23cc0db39a8d9145194d03f34f1dbd3f5edf21d0b5bcddd3615967",
+      "extent": {
+        "across": [
+          -6.504,
+          6.504
+        ],
+        "along": [
+          -10,
+          10
+        ],
+        "height": 2.654
+      },
+      "triangles": 1372,
+      "from": [
+        "https://sketchfab.com/3d-models/lockheed-f-117-nighthawk-d2c544381f8444ad8628cd3bb0665e29"
+      ],
+      "made": "rebaked; the owner's colour on the wingtips"
+    },
+    "galleon": {
+      "file": "realistic-by.2e298fc5a522.galleon.glb",
+      "scale": 0.00825,
+      "sha256": "d35e589fccea5e0cc120dc785652a4ed7e598e3ec08bdc676e9750da346f3956",
+      "extent": {
+        "across": [
+          -9.002,
+          9.002
+        ],
+        "along": [
+          -20,
+          20
+        ],
+        "height": 27.024,
+        "draught": 4.5
+      },
+      "triangles": 3333,
+      "from": [
+        "https://sketchfab.com/3d-models/simple-galleon-1623189576754058b64d0a026f662b9e"
+      ],
+      "made": "simplified; the owner's colour on a band along the hull"
+    },
+    "destroyer": {
+      "file": "realistic-by.2e298fc5a522.destroyer.glb",
+      "scale": 0.003423,
+      "sha256": "c8a7e849b25c1cec136b2dbcb0603f70e4739cfd7616cfe74c94f94764f2ed1f",
+      "extent": {
+        "across": [
+          -5.538,
+          5.538
+        ],
+        "along": [
+          -55.5,
+          55.5
+        ],
+        "height": 20.001,
+        "draught": 3.8
+      },
+      "triangles": 3334,
+      "from": [
+        "https://sketchfab.com/3d-models/samidare-destroyer-b37939147c854e61857f5b248f9efd29"
+      ],
+      "made": "rewrapped; the owner's colour on a band along the hull"
+    },
+    "cruiser": {
+      "file": "realistic-by.2e298fc5a522.cruiser.glb",
+      "scale": 0.002204,
+      "sha256": "e2a71bb28ab71c22fe8ef92a576af0dd1ee69c7a67a9aed099858fc499f595e3",
+      "extent": {
+        "across": [
+          -11.176,
+          11.176
+        ],
+        "along": [
+          -93,
+          93
+        ],
+        "height": 34.899,
+        "draught": 7.2
+      },
+      "triangles": 3497,
+      "from": [
+        "https://sketchfab.com/3d-models/graf-spee-low-poly-0e4575cd053c490491e8eda7ced005e5"
+      ],
+      "made": "simplified; the owner's colour on a band along the hull"
+    },
+    "missile-cruiser": {
+      "file": "realistic-by.2e298fc5a522.missile-cruiser.glb",
+      "scale": 0.002662,
+      "sha256": "20b5a85fb7be2fd59f16e131b1aafc319d28cca4384ae4f476e03da499d86660",
+      "extent": {
+        "across": [
+          -11.853,
+          11.853
+        ],
+        "along": [
+          -77,
+          77
+        ],
+        "height": 45.426,
+        "draught": 8
+      },
+      "triangles": 3424,
+      "from": [
+        "https://sketchfab.com/3d-models/11-low-poly-us-navy-ddg-51-uss-arleigh-burke-17be09c31c6047e4a5969b68c29eba03"
+      ],
+      "made": "rewrapped; the owner's colour on a band along the hull"
+    },
+    "battleship": {
+      "file": "realistic-by.2e298fc5a522.battleship.glb",
+      "scale": 0.001673,
+      "sha256": "e441e0aba21f76d1fe670e2f0a30e15db6c2a896418d24038a4bd8e546badd9c",
+      "extent": {
+        "across": [
+          -18.096,
+          18.096
+        ],
+        "along": [
+          -125.5,
+          125.5
+        ],
+        "height": 59.779,
+        "draught": 9.3
+      },
+      "triangles": 3441,
+      "from": [
+        "https://sketchfab.com/3d-models/bismark-battleship-dfc8b1756ce3419287a9e43a9b9dd21c"
+      ],
+      "made": "rewrapped; the owner's colour on a band along the hull"
+    },
+    "submarine": {
+      "file": "realistic-by.2e298fc5a522.submarine.glb",
+      "scale": 0.005357,
+      "sha256": "2115af2476038550401804bb52b427ff4a2d7ae10cc905cbea28830afc7b05b9",
+      "extent": {
+        "across": [
+          -5.22,
+          5.22
+        ],
+        "along": [
+          -28,
+          28
+        ],
+        "height": 12.151,
+        "draught": 5.5
+      },
+      "triangles": 3442,
+      "from": [
+        "https://sketchfab.com/3d-models/koreanavy-jang-bogo-classtype209-submarine-abd6a2cd5fe14f6baa16e64c2d20f317"
+      ],
+      "made": "simplified; the owner's colour on the conning tower"
+    },
+    "carrier": {
+      "file": "realistic-by.2e298fc5a522.carrier.glb",
+      "scale": 0.001351,
+      "sha256": "8bf564f047dce73c9f41ba9dbddedcfcce5e3439c2605344495753fd6899649b",
+      "extent": {
+        "across": [
+          -42.063,
+          42.063
+        ],
+        "along": [
+          -166.5,
+          166.5
+        ],
+        "height": 62.794,
+        "draught": 12
+      },
+      "triangles": 2668,
+      "from": [
+        "https://sketchfab.com/3d-models/gerald-ford-aircraft-carrier-324120997379466caad30917911bcd8b"
+      ],
+      "made": "rebaked; the owner's colour on a band along the hull, and the island"
+    }
+  },
+  "names": {
+    "unit": {
+      "Diplomat": "diplomat",
+      "Paratrooper": "paratrooper",
+      "Fanatic": "fanatic",
+      "MechanizedInfantry": "mech-inf",
+      "Cannon": "cannon",
+      "Artillery": "artillery",
+      "Howitzer": "howitzer",
+      "Tank": "tank",
+      "Freight": "freight",
+      "Nuclear": "nuclear",
+      "CruiseMissile": "cruise-missile",
+      "Fighter": "fighter",
+      "Helicopter": "helicopter",
+      "StealthFighter": "stealth-fighter",
+      "Galleon": "galleon",
+      "Destroyer": "destroyer",
+      "Cruiser": "cruiser",
+      "MissileCruiser": "missile-cruiser",
+      "Battleship": "battleship",
+      "Submarine": "submarine",
+      "Carrier": "carrier"
+    }
+  }
+}
