@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@bc0400e6","date":"2026-11-25T17:56:46.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a unit fighting hand to hand lands its blow when its model's fight clip says it does (#1380)"],"externalChanges":{}}
+,
 {"version":"0.1.0@d7fe597d","date":"2026-11-25T17:19:15.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 rivers have water in their channels, round where they bend and join, running into the sea (#1378)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@c67e30e6","date":"2026-11-25T16:09:32.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 rivers cut their channels into the land, with wet banks (#1376)"],"externalChanges":{}}
