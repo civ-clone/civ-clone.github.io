@@ -351,6 +351,18 @@
         "hut": {
           "description": "A hut: one sprite.",
           "allOf": [{ "$ref": "#/$defs/singleFamily" }]
+        },
+        "farmland": {
+          "description": "Farmland, drawn in place of the square's irrigation: one sprite. Left out, a square with Farmland is drawn with its irrigation.",
+          "allOf": [{ "$ref": "#/$defs/singleFamily" }]
+        },
+        "fortress": {
+          "description": "A Fortress: one sprite, at anchors.Fortress if given. Left out, a square with one is drawn without it.",
+          "allOf": [{ "$ref": "#/$defs/singleFamily" }]
+        },
+        "airbase": {
+          "description": "An Airbase: one sprite, at anchors.Airbase if given. Left out, a square with one is drawn without it.",
+          "allOf": [{ "$ref": "#/$defs/singleFamily" }]
         }
       },
       "required": [
@@ -794,7 +806,7 @@
           "x-message": "{path} must list, for each terrain, what joins it."
         },
         "anchors": {
-          "description": "Where sprites smaller than a tile go in it, by engine name.",
+          "description": "Where a sprite goes in the tile, by engine name: one smaller than the tile within it, one taller above it, as far as geometry.overhang leaves room for.",
           "type": "object",
           "additionalProperties": {
             "type": "object",
