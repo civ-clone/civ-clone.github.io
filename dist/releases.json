@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@63667a6c","date":"2026-11-25T06:17:14.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 farms have their buildings among their fields, and mines their headframes and tunnels (#1357)"],"externalChanges":{}}
+,
 {"version":"0.1.0@e535db32","date":"2026-11-25T02:51:19.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 forests, jungles and swamps grow 0 A.D.'s trees, pines, beeches, teaks, date palms and dead trees (#1356)"],"externalChanges":{"models-0ad":{"status":"updated","log":["feat: trees for the 3D map's woods: a pine, a beech, a teak, a date palm and a dead tree (#7)"]}}}
 ,
 {"version":"0.1.0@e542a8d1","date":"2026-11-25T01:20:17.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 special resources are big enough to see, horses, seals and the grassland's shields among them (#1353)"],"externalChanges":{}}
