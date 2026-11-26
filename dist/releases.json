@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@e573d3c1","date":"2026-11-26T15:33:03.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 roads, railroads and runways cross rivers on bridges, and a fortress's walls leave a gate for the river (#1384)"],"externalChanges":{}}
+,
 {"version":"0.1.0@eba1464e","date":"2026-11-26T09:12:34.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 fields stop short of rivers, and trees, specials, mines, huts and farms stand clear of them (#1382)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@bc0400e6","date":"2026-11-25T17:56:46.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a unit fighting hand to hand lands its blow when its model's fight clip says it does (#1380)"],"externalChanges":{}}
