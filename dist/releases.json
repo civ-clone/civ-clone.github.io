@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@7b1a3471","date":"2026-11-26T22:07:27.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 with the realistic sets, Alpine Troops stand, ski, fire their rifles and fall with their own clips (#1396)"],"externalChanges":{"models-realistic-cc0":{"status":"updated","log":["The Alpine Troops were generated again, without the ski poles, and hold a bolt-action rifle (generated apart) at the trail in the right hand.","They have idle, move (a ski glide, both skis sliding on the snow), fight (the rifle raised to the shoulder and fired once, at 0.54 s) and die (falling sideways onto his side, his skis and rifle on the ground beside him)."]}}}
+,
 {"version":"0.1.0@06a395d0","date":"2026-11-26T21:53:58.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 hills roll higher and mountains rise twice as high, so rivers rush white down them (#1395)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@484b1e49","date":"2026-11-26T19:44:41.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 roads, railroads and fields lie exactly on the land between their points too, so they stay in order on steep ground (#1392)"],"externalChanges":{}}
