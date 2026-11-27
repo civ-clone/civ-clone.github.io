@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@032981ed","date":"2026-11-27T10:41:38.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 catapults lob a stone and archers loose an arrow each from where they stand rather than charging (#1404)"],"externalChanges":{}}
+,
 {"version":"0.1.0@66f9debc","date":"2026-11-27T09:50:56.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 cannons, artillery and tanks fire a shell from where they stand rather than charging, and warships fire their guns (#1402)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@d4fb4703","date":"2026-11-26T23:15:47.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 with the realistic sets, Paratroopers sway under their canopies, fire from the hip and go limp in the harness with their own clips (#1400)"],"externalChanges":{"models-realistic-by":{"status":"updated","log":["The Paratroopers stand under their parachute with a hand on the SMG slung at the hip and the other on a riser. Their canopy sways and swings above them as they wait and move; they turn to fire a three-round burst from the hip, looking where they fire; and when they die they go limp in the harness as the canopy tips over.","A rig can put a muzzle on a bone, for a weapon that's part of the figure rather than a prop of its own, and its shots leave from there."]}}}
