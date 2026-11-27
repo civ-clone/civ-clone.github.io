@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@c6d874d4","date":"2026-11-27T18:24:30.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 with the realistic sets, units ease into their stride as they set off and back as they stop, rather than snapping (closes #1410) (#1411)"],"externalChanges":{}}
+,
 {"version":"0.1.0@84bc21d7","date":"2026-11-27T17:12:07.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 with the realistic sets, Paratroopers swing quicker as they move, in time with their steps (#1409)"],"externalChanges":{"models-realistic-by":{"status":"updated","log":["The 3D map plays a move clip once every two squares, so a walk stopped wherever the Paratroopers' 2.4 s swing had got to and he snapped back upright. He now swings to and fro in 1 s, as most people's strides take, so a walk along a row or column ends upright. His head's lag is scaled with it, so the swing is the old one played 2.4 times as fast."]}}}
 ,
 {"version":"0.1.0@dc64cad2","date":"2026-11-27T12:18:44.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a missile is spent as it strikes, a downed aircraft falls where it flew, and a squad's shots no longer cross (#1408)"],"externalChanges":{}}
