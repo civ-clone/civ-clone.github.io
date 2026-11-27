@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@b683c0c4","date":"2026-11-27T23:31:07.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 land at the edge of what's been seen slopes down under the cloud, rather than standing over it as a sheer wall (closes #1393) (#1415)"],"externalChanges":{}}
+,
 {"version":"0.1.0@58d8c04b","date":"2026-11-27T21:12:24.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 the rock on mountains' steep sides is laid from the side it faces, so its cracks no longer run down them as streaks (#1413)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@c6d874d4","date":"2026-11-27T18:24:30.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 with the realistic sets, units ease into their stride as they set off and back as they stop, rather than snapping (closes #1410) (#1411)"],"externalChanges":{}}
