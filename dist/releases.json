@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@f3ccc8c7","date":"2026-11-27T11:27:48.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 fighters, bombers and helicopters fire a burst from the nose as they dive at what they attack (#1406)"],"externalChanges":{}}
+,
 {"version":"0.1.0@032981ed","date":"2026-11-27T10:41:38.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 catapults lob a stone and archers loose an arrow each from where they stand rather than charging (#1404)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@66f9debc","date":"2026-11-27T09:50:56.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 cannons, artillery and tanks fire a shell from where they stand rather than charging, and warships fire their guns (#1402)"],"externalChanges":{}}
