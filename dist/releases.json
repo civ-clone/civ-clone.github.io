@@ -1,4 +1,6 @@
 [
+{"version":"0.1.0@65849d57","date":"2026-11-28T08:50:03.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a celebrating city flies flags from its roofs (#1422)"],"externalChanges":{}}
+,
 {"version":"0.1.0@1f163b88","date":"2026-11-28T07:16:39.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a rioting city's smoke is see-through, so a unit behind it shows (#1421)"],"externalChanges":{}}
 ,
 {"version":"0.1.0@e83e983b","date":"2026-11-28T04:12:09.000Z","localChanges":["chore: work towards a 3D map, not offered yet: under ?3d=1 a city in civil disorder has fires on its roofs and smoke rising from them (#1418)"],"externalChanges":{}}
